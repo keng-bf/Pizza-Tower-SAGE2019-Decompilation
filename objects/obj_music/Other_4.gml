@@ -14,7 +14,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
         {
             audio_stop_all();
             scr_sound(mu_title);
-            pausedmusic = 83;
+            pausedmusic = mu_title;
         }
     }
     
@@ -24,7 +24,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
         {
             audio_stop_all();
             scr_sound(mu_hub);
-            pausedmusic = 70;
+            pausedmusic = mu_hub;
         }
     }
     
@@ -34,7 +34,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
         {
             audio_stop_all();
             scr_sound(mu_tutorial);
-            pausedmusic = 84;
+            pausedmusic = mu_tutorial;
         }
     }
     
@@ -49,7 +49,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
                     audio_stop_all();
                     scr_sound(mu_dungeon);
                     audio_sound_set_track_position(global.music, fadeoff);
-                    pausedmusic = 82;
+                    pausedmusic = mu_dungeon;
                 }
             }
             else if (roomname == ("dungeon_" + string(i)) && i > 8)
@@ -59,7 +59,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
                     audio_stop_all();
                     scr_sound(mu_dungeondepth);
                     audio_sound_set_track_position(global.music, fadeoff);
-                    pausedmusic = 90;
+                    pausedmusic = mu_dungeondepth;
                 }
             }
         }
@@ -76,7 +76,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
                     audio_stop_all();
                     scr_sound(mu_medievalentrance);
                     audio_sound_set_track_position(global.music, fadeoff);
-                    pausedmusic = 85;
+                    pausedmusic = mu_medievalentrance;
                 }
             }
             else if (roomname == ("medieval_" + string(i)) && i > 2 && i <= 5)
@@ -86,7 +86,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
                     audio_stop_all();
                     scr_sound(mu_medievalremix);
                     audio_sound_set_track_position(global.music, fadeoff);
-                    pausedmusic = 75;
+                    pausedmusic = mu_medievalremix;
                 }
             }
             else if (roomname == ("medieval_" + string(i)) && i > 5)
@@ -96,7 +96,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
                     audio_stop_all();
                     scr_sound(mu_medieval);
                     audio_sound_set_track_position(global.music, fadeoff);
-                    pausedmusic = 74;
+                    pausedmusic = mu_medieval;
                 }
             }
         }
@@ -113,7 +113,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
                     audio_stop_all();
                     scr_sound(mu_ruin);
                     audio_sound_set_track_position(global.music, fadeoff);
-                    pausedmusic = 86;
+                    pausedmusic = mu_ruin;
                 }
             }
             else if (roomname == ("ruin_" + string(i)) && i > 6)
@@ -123,7 +123,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
                     audio_stop_all();
                     scr_sound(mu_ruinremix);
                     audio_sound_set_track_position(global.music, fadeoff);
-                    pausedmusic = 87;
+                    pausedmusic = mu_ruinremix;
                 }
             }
         }
@@ -136,7 +136,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
             audio_stop_all();
             scr_sound(mu_secret);
             audio_sound_set_track_position(global.music, fadeoff);
-            pausedmusic = 71;
+            pausedmusic = mu_secret;
         }
     }
 }
