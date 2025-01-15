@@ -2076,7 +2076,6 @@
     {"id":{"name":"tileset_dungeon2","path":"tilesets/tileset_dungeon2/tileset_dungeon2.yy",},"order":2070,},
     {"id":{"name":"tileset_dungeon3_sprite","path":"sprites/tileset_dungeon3_sprite/tileset_dungeon3_sprite.yy",},"order":2071,},
     {"id":{"name":"tileset_dungeon3","path":"tilesets/tileset_dungeon3/tileset_dungeon3.yy",},"order":2072,},
-    {"id":{"name":"Enum_Declarations","path":"scripts/Enum_Declarations/Enum_Declarations.yy",},"order":2074,},
   ],
   "Options": [
     {"name":"Main","path":"options/main/options_main.yy",},
