@@ -1,144 +1,144 @@
 function scr_keyname()
 {
-	if (argument0 == 37)
+	if (argument0 == vk_left)
 	    return "LEFT";
 	
-	if (argument0 == 39)
+	if (argument0 == vk_right)
 	    return "RIGHT";
 	
-	if (argument0 == 38)
+	if (argument0 == vk_up)
 	    return "UP";
 	
-	if (argument0 == 40)
+	if (argument0 == vk_down)
 	    return "DOWN";
 	
-	if (argument0 == 13)
+	if (argument0 == vk_enter)
 	    return "ENTER";
 	
-	if (argument0 == 27)
+	if (argument0 == vk_escape)
 	    return "ESCAPE";
 	
-	if (argument0 == 32)
+	if (argument0 == vk_space)
 	    return "SPACE";
 	
-	if (argument0 == 16)
+	if (argument0 == vk_shift)
 	    return "SHIFT";
 	
-	if (argument0 == 17)
+	if (argument0 == vk_control)
 	    return "CONTROL";
 	
-	if (argument0 == 18)
+	if (argument0 == vk_alt)
 	    return "ALT";
 	
-	if (argument0 == 8)
+	if (argument0 == vk_backspace)
 	    return "BACKSPACE";
 	
-	if (argument0 == 9)
+	if (argument0 == vk_tab)
 	    return "TAB";
 	
-	if (argument0 == 36)
+	if (argument0 == vk_home)
 	    return "HOME";
 	
-	if (argument0 == 35)
+	if (argument0 == vk_end)
 	    return "END";
 	
-	if (argument0 == 46)
+	if (argument0 == vk_delete)
 	    return "DELETE";
 	
-	if (argument0 == 45)
+	if (argument0 == vk_insert)
 	    return "INSERT";
 	
-	if (argument0 == 33)
+	if (argument0 == vk_pageup)
 	    return "PAGE UP";
 	
-	if (argument0 == 34)
+	if (argument0 == vk_pagedown)
 	    return "PAGE DOWN";
 	
-	if (argument0 == 19)
+	if (argument0 == vk_pause)
 	    return "PAUSE";
 	
-	if (argument0 == 44)
+	if (argument0 == vk_printscreen)
 	    return "PRINTSCREEN";
 	
-	if (argument0 == 112)
+	if (argument0 == vk_f1)
 	    return "F1";
 	
-	if (argument0 == 113)
+	if (argument0 == vk_f2)
 	    return "F2";
 	
-	if (argument0 == 114)
+	if (argument0 == vk_f3)
 	    return "F3";
 	
-	if (argument0 == 115)
+	if (argument0 == vk_f4)
 	    return "F4";
 	
-	if (argument0 == 116)
+	if (argument0 == vk_f5)
 	    return "F5";
 	
-	if (argument0 == 117)
+	if (argument0 == vk_f6)
 	    return "F6";
 	
-	if (argument0 == 118)
+	if (argument0 == vk_f7)
 	    return "F7";
 	
-	if (argument0 == 119)
+	if (argument0 == vk_f8)
 	    return "F8";
 	
-	if (argument0 == 120)
+	if (argument0 == vk_f9)
 	    return "F9";
 	
-	if (argument0 == 121)
+	if (argument0 == vk_f10)
 	    return "F10";
 	
-	if (argument0 == 122)
+	if (argument0 == vk_f11)
 	    return "F11";
 	
-	if (argument0 == 123)
+	if (argument0 == vk_f12)
 	    return "F12";
 	
-	if (argument0 == 96)
+	if (argument0 == vk_numpad0)
 	    return "NUMPAD 0";
 	
-	if (argument0 == 97)
+	if (argument0 == vk_numpad1)
 	    return "NUMPAD 1";
 	
-	if (argument0 == 98)
+	if (argument0 == vk_numpad2)
 	    return "NUMPAD 2";
 	
-	if (argument0 == 99)
+	if (argument0 == vk_numpad3)
 	    return "NUMPAD 3";
 	
-	if (argument0 == 100)
+	if (argument0 == vk_numpad4)
 	    return "NUMPAD 4";
 	
-	if (argument0 == 101)
+	if (argument0 == vk_numpad5)
 	    return "NUMPAD 5";
 	
-	if (argument0 == 102)
+	if (argument0 == vk_numpad6)
 	    return "NUMPAD 6";
 	
-	if (argument0 == 103)
+	if (argument0 == vk_numpad7)
 	    return "NUMPAD 7";
 	
-	if (argument0 == 104)
+	if (argument0 == vk_numpad8)
 	    return "NUMPAD 8";
 	
-	if (argument0 == 105)
+	if (argument0 == vk_numpad9)
 	    return "NUMPAD 9";
 	
-	if (argument0 == 106)
+	if (argument0 == vk_multiply)
 	    return "MULTIPLY";
 	
-	if (argument0 == 111)
+	if (argument0 == vk_divide)
 	    return "DIVIDE";
 	
-	if (argument0 == 107)
+	if (argument0 == vk_add)
 	    return "ADD";
 	
-	if (argument0 == 109)
+	if (argument0 == vk_subtract)
 	    return "SUBSTRACT";
 	
-	if (argument0 == 110)
+	if (argument0 == vk_decimal)
 	    return "DECIMAL";
 	
 	if (argument0 == -1)
