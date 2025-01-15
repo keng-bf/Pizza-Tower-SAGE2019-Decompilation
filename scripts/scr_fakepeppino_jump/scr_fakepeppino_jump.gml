@@ -20,7 +20,7 @@ function scr_fakepeppino_jump()
 	{
 	    image_index = 0;
 	    sprite_index = spr_fakepeppino_land;
-	    state = states.idle;
+	    state = 92;
 	    movespeed = 0;
 	}
 }
