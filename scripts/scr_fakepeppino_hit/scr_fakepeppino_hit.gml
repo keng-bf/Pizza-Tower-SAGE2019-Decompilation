@@ -6,11 +6,11 @@ function scr_fakepeppino_hit()
 	{
 	    with (obj_player)
 	    {
-	        if (state != 72 && hurted == 0 && cutscene == 0 && state != 71)
+	        if (state != states.hurt && hurted == 0 && cutscene == 0 && state != states.bump)
 	        {
-	            if (state != 50)
+	            if (state != states.backbreaker)
 	            {
-	                state = 50;
+	                state = states.backbreaker;
 	                sprite_index = spr_player_hurt;
 	                x = other.x + (other.image_xscale * 50);
 	                y = other.y;
@@ -31,7 +31,7 @@ function scr_fakepeppino_hit()
 	
 	if (floor(image_index) == (image_number - 1) && sprite_index == spr_fakepeppino_grabdash)
 	{
-	    state = 92;
+	    state = states.idle;
 	    image_index = 0;
 	    sprite_index = spr_fakepeppino_idle;
 	    movespeed = 0;
@@ -41,7 +41,7 @@ function scr_fakepeppino_hit()
 	{
 	    with (obj_player)
 	    {
-	        if (state != 72 && scr_sound(sound_touchspike))
+	        if (state != states.hurt && scr_sound(sound_touchspike))
 	            global.hurtcounter += 1;
 	        
 	        alarm[8] = 60;
@@ -94,12 +94,12 @@ function scr_fakepeppino_hit()
 	        }
 	        
 	        instance_create(x, y, obj_spikehurteffect);
-	        state = 72;
+	        state = states.hurt;
 	        image_index = 0;
 	        flash = 1;
 	    }
 	    
-	    state = 92;
+	    state = states.idle;
 	    sprite_index = spr_fakepeppino_idle;
 	    image_index = 0;
 	}
