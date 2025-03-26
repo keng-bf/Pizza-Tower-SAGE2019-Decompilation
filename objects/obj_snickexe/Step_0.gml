@@ -22,7 +22,7 @@ if (place_meeting(x, y, obj_player1) && (obj_player1.instakillmove == 1 || obj_p
 {
     repeat (6)
     {
-        with (instance_create(x + random_range(-100, 100), y + random_range(-100, obj_peppermancharge), obj_balloonpop))
+        with (instance_create(x + random_range(-100, 100), y + random_range(-100, 100), obj_balloonpop))
             sprite_index = spr_shotgunimpact;
     }
     
