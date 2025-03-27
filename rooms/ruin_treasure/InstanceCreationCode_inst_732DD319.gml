@@ -1,2 +1,2 @@
-sprgot = 967;
-spridle = 966;
+sprgot = spr_beantreasuregot;
+spridle = spr_beantreasure;
