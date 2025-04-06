@@ -55,7 +55,7 @@ if (shake_mag > 0)
 
 if (instance_exists(obj_player2) && obj_player2.state != 35 && obj_player2.state != 54)
 {
-    var target = 4;
+    var target = obj_player2;
     
     if (obj_player2.state == 89 || obj_player2.state == 36)
     {
