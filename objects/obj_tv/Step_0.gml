@@ -132,15 +132,15 @@ else if (global.hurtcounter >= global.hurtmilestone && obj_player.character == "
     alarm[0] = 150;
     image_speed = 0.1;
     
-    if (obj_player.character == "P")
+    if obj_player.character == "P"
         character = "PEPPINO";
     else
         character = "THE NOISE";
     
     message = "YOU HAVE HURT " + string(character) + " " + string(global.hurtmilestone) + " TIMES...";
     
-    if (tvsprite != 804 && tvsprite != 803 && tvsprite != 802 && tvsprite != 801)
-        tvsprite = choose(804, 803, 802, 801);
+    if (tvsprite != spr_tvtalking1 && tvsprite != spr_tvtalking2 && tvsprite != spr_tvtalking3 && tvsprite != spr_tvtalking4)
+        tvsprite = choose(spr_tvtalking1, spr_tvtalking2, spr_tvtalking3, spr_tvtalking4);
     
     global.hurtmilestone += 3;
 }
