@@ -381,11 +381,11 @@ if (sprite_index == spr_player_winding && state != 0)
     windingAnim = 0;
 
 if (sprite_index == spr_player_idlevomit && image_index > 28 && image_index < 43)
-    instance_create(x + random_range(-5, obj_pause), y + 46, obj_vomit);
+    instance_create(x + random_range(-5, 5), y + 46, obj_vomit);
 
 if (sprite_index == spr_player_idlevomitblood && image_index > 28 && image_index < 43)
 {
-    with (instance_create(x + random_range(-5, obj_pause), y + 46, obj_vomit))
+    with (instance_create(x + random_range(-5, 5), y + 46, obj_vomit))
         sprite_index = spr_vomit2;
 }
 
