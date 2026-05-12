@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": true,
-  "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy"
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "__init_action",
-  "tags": [],
-  "resourceType": "GMScript"
+  "isCompatibility": true,
+  "isDnD": false,
+  "parent": {
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
+  },
 }

@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
-  "isCompatibility": true,
-  "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy"
-  },
+  "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "scr_player_backbreaker",
-  "tags": [],
-  "resourceType": "GMScript"
+  "isCompatibility": true,
+  "isDnD": false,
+  "parent": {
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
+  },
 }

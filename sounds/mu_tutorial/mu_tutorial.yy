@@ -1,24 +1,23 @@
 {
-  "conversionMode": 0,
-  "compression": 0,
-  "volume": 1.0,
-  "preload": true,
-  "bitRate": 128,
-  "sampleRate": 44100,
-  "type": 0,
-  "bitDepth": 1,
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "mu_tutorial",
   "audioGroupId": {
     "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default"
+    "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mu_tutorial",
+  "bitDepth": 1,
+  "bitRate": 128,
+  "compression": 0,
+  "conversionMode": 0,
   "duration": 380.604,
   "parent": {
     "name": "Sounds",
-    "path": "folders/Sounds.yy"
+    "path": "folders/Sounds.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "mu_tutorial",
-  "tags": [],
-  "resourceType": "GMSound"
+  "preload": true,
+  "sampleRate": 44100,
+  "soundFile": "mu_tutorial",
+  "type": 0,
+  "volume": 1.0,
 }

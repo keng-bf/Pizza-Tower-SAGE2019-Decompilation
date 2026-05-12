@@ -1,24 +1,23 @@
 {
-  "conversionMode": 0,
-  "compression": 0,
-  "volume": 1.0,
-  "preload": true,
-  "bitRate": 128,
-  "sampleRate": 44100,
-  "type": 0,
-  "bitDepth": 1,
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "mu_medievalremix",
   "audioGroupId": {
     "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default"
+    "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mu_medievalremix",
+  "bitDepth": 1,
+  "bitRate": 128,
+  "compression": 0,
+  "conversionMode": 0,
   "duration": 176.002,
   "parent": {
     "name": "Sounds",
-    "path": "folders/Sounds.yy"
+    "path": "folders/Sounds.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "mu_medievalremix",
-  "tags": [],
-  "resourceType": "GMSound"
+  "preload": true,
+  "sampleRate": 44100,
+  "soundFile": "mu_medievalremix",
+  "type": 0,
+  "volume": 1.0,
 }
