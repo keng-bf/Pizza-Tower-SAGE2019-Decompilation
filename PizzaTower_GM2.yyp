@@ -596,8 +596,6 @@
     {"id":{"name":"shd_pal_swapper","path":"shaders/shd_pal_swapper/shd_pal_swapper.yy",},},
     {"id":{"name":"shd_hit","path":"shaders/shd_hit/shd_hit.yy",},},
     {"id":{"name":"shd_panicbg","path":"shaders/shd_panicbg/shd_panicbg.yy",},},
-    {"id":{"name":"font0","path":"fonts/font0/font0.yy",},},
-    {"id":{"name":"font1","path":"fonts/font1/font1.yy",},},
     {"id":{"name":"spr_plug","path":"sprites/spr_plug/spr_plug.yy",},},
     {"id":{"name":"spr_cheeseblob","path":"sprites/spr_cheeseblob/spr_cheeseblob.yy",},},
     {"id":{"name":"spr_cheesemaker","path":"sprites/spr_cheesemaker/spr_cheesemaker.yy",},},

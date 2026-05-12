@@ -551,8 +551,6 @@
     {"name":"shd_pal_swapper","order":771,"path":"shaders/shd_pal_swapper/shd_pal_swapper.yy",},
     {"name":"shd_hit","order":772,"path":"shaders/shd_hit/shd_hit.yy",},
     {"name":"shd_panicbg","order":773,"path":"shaders/shd_panicbg/shd_panicbg.yy",},
-    {"name":"font0","order":774,"path":"fonts/font0/font0.yy",},
-    {"name":"font1","order":775,"path":"fonts/font1/font1.yy",},
     {"name":"spr_plug","order":1,"path":"sprites/spr_plug/spr_plug.yy",},
     {"name":"spr_cheeseblob","order":2,"path":"sprites/spr_cheeseblob/spr_cheeseblob.yy",},
     {"name":"spr_cheesemaker","order":3,"path":"sprites/spr_cheesemaker/spr_cheesemaker.yy",},
