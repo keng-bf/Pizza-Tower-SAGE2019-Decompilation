@@ -18,9 +18,6 @@ function scr_player_crouch()
 	    image_index = 0;
 	}
 	
-	if (key_slap2 && character == "N" && !instance_exists(obj_bomb))
-	    instance_create(x, y, obj_bomb);
-	
 	if (grounded && !key_down && !scr_solid(x, y - 16) && !scr_solid(x, y - 32) && !key_jump)
 	{
 	    state = 0;

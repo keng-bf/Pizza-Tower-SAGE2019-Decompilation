@@ -9,22 +9,6 @@ function scr_player_mach2()
 	hsp = xscale * movespeed;
 	move2 = key_right2 + key_left2;
 	move = key_right + key_left;
-	
-	if (character == "N")
-	{
-	    if (movespeed < 24 && move == xscale)
-	    {
-	        movespeed += 0.05;
-	        
-	        if (!instance_exists(obj_crazyruneffect) && movespeed > 12)
-	            instance_create(x, y, obj_crazyruneffect);
-	    }
-	    else if (movespeed > 12 && move != xscale)
-	    {
-	        movespeed -= 0.05;
-	    }
-	}
-	
 	crouchslideAnim = 1;
 	
 	if (!key_jump2 && jumpstop == 0 && vsp < 0.5)

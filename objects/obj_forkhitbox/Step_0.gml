@@ -10,19 +10,13 @@ if (instance_exists(ID))
     
     with (ID)
     {
-        if (object_index == obj_forknight || object_index == obj_indiancheese || object_index == obj_noisey)
+        if (object_index == obj_forknight)
         {
             if (state != 100)
             {
                 hitboxcreate = 0;
                 instance_destroy(other.id);
             }
-        }
-        
-        if (object_index == obj_boulder)
-        {
-            if (hitwall == 0)
-                instance_destroy(other.id);
         }
         
         if (object_index == obj_snickexe)

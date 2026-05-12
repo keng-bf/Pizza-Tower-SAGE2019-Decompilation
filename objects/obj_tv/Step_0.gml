@@ -91,13 +91,7 @@ else if (global.hurtcounter >= global.hurtmilestone && obj_player.character == "
 {
     alarm[0] = 150;
     image_speed = 0.1;
-    
-    if obj_player.character == "P"
-        character = "PEPPINO";
-    else
-        character = "THE NOISE";
-    
-    message = "YOU HAVE HURT " + string(character) + " " + string(global.hurtmilestone) + " TIMES...";
+    message = "YOU HAVE HURT PEPPINO " + string(global.hurtmilestone) + " TIMES...";
     
     if (tvsprite != spr_tvtalking1 && tvsprite != spr_tvtalking2 && tvsprite != spr_tvtalking3 && tvsprite != spr_tvtalking4)
         tvsprite = choose(spr_tvtalking1, spr_tvtalking2, spr_tvtalking3, spr_tvtalking4);
@@ -175,14 +169,4 @@ if (obj_player.state == 55)
     showtext = 1;
     message = "GOT THE KEY!";
     alarm[0] = 50;
-}
-
-if (instance_exists(obj_noise_pushbutton))
-{
-    if (obj_noise_pushbutton.hsp != 0 && global.panic == 0)
-    {
-        showtext = 1;
-        message = "UH OH...";
-        alarm[0] = 50;
-    }
 }

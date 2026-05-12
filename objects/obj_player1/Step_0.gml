@@ -214,10 +214,6 @@ switch (state)
         scr_player_runonball();
         break;
     
-    case 87:
-        scr_player_boulder();
-        break;
-    
     case 55:
         scr_player_keyget();
         break;

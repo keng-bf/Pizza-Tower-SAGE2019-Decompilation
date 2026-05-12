@@ -68,8 +68,5 @@ function scr_player_superslam()
 	if (movespeed > 6)
 	    movespeed -= 0.1;
 	
-	if (character == "N" && move != 0)
-	    xscale = move;
-	
 	image_speed = 0.35;
 }

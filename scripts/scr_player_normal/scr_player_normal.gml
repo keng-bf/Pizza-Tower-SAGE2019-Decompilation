@@ -332,15 +332,6 @@ function scr_player_normal()
 	        spdh = -4;
 	}
 	
-	if (key_slap2 && character == "N" && !instance_exists(obj_bomb))
-	{
-	    with (instance_create(x, y, obj_bomb))
-	    {
-	        vsp = -5;
-	        hsp = other.xscale * 5;
-	    }
-	}
-	
 	if (key_attack && !place_meeting(x + xscale, y, obj_solid) && character == "P")
 	{
 	    movespeed = 6;

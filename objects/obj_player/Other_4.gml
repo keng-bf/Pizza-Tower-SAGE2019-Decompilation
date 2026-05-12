@@ -85,6 +85,3 @@ if (global.pineapplefollow == 1)
 
 roomstartx = x;
 roomstarty = y;
-
-if (character == "N")
-    scr_characterspr();
