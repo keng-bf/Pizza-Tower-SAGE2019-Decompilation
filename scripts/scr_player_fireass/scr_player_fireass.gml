@@ -33,22 +33,6 @@ function scr_player_fireass()
 	    }
 	}
 	
-	if (sprite_index == spr_fireassground)
-	{
-	    hsp = xscale * movespeed;
-	    
-	    if (movespeed > 0)
-	        movespeed -= 0.25;
-	    
-	    if (floor(image_index) == (image_number - 1) || place_meeting(x + xscale, y, obj_solid))
-	    {
-	        scr_soundeffect(sfx_fireassend);
-	        sprite_index = spr_fireassend;
-	        hsp = 0;
-	        image_index = 0;
-	    }
-	}
-	
 	if (sprite_index == spr_fireassend)
 	{
 	    if (floor(image_index) == (image_number - 1))

@@ -28,7 +28,7 @@ if (instance_exists(ID))
             }
         }
         
-        if (object_index == obj_peasanto || object_index == obj_fencer || object_index == obj_ancho)
+        if (object_index == obj_fencer || object_index == obj_ancho)
         {
             if (state != 94)
             {
