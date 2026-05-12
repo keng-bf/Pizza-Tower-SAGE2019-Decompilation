@@ -28,7 +28,11 @@
   "physicsShape": 0,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"level","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"medieval","varType":2,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"targetRoom","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"medieval_1","varType":5,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"sprite_index","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"spr_medievalcomputer","varType":5,},
+  ],
   "solid": false,
   "spriteId": {
     "name": "spr_medievalcomputer",

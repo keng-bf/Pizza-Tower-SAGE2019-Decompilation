@@ -1,4 +1,4 @@
-if (visited == 1 && sprite_index != spr_pepperdoor)
+if visited
     sprite_index = spr_goldendoorvisited;
 
 if (place_meeting(x, y, obj_doorA))

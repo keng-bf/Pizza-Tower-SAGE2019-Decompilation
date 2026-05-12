@@ -2,7 +2,6 @@ bgalpha = 1;
 bgalpha2 = 1;
 bgalpha3 = 1;
 bgalpha4 = 1;
-level = "none";
 ini_open("saveData.ini");
 global.medievalhighscore = ini_read_string("Highscore", "medieval", 0);
 global.ruinhighscore = ini_read_string("Highscore", "ruin", 0);

@@ -10,9 +10,6 @@ with (obj_player1)
     }
 }
 
-with (obj_peppermandestroyable)
-    instance_destroy();
-
 if (global.keyget == 0 && obj_player.state != 26 && obj_player.state != 23 && obj_player.state != 24 && obj_player.state != 14 && obj_player.state != 12 && obj_player.state != 17)
 {
     obj_player.state = 55;

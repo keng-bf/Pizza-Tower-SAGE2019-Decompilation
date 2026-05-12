@@ -1,8 +1,5 @@
 function scr_enemy_stun()
 {
-	if (object_index == obj_ninja)
-	    attack = 1;
-	
 	stunned--;
 	sprite_index = stunfallspr;
 	image_speed = 0.35;

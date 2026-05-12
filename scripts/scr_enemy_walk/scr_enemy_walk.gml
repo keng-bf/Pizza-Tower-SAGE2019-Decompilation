@@ -32,14 +32,7 @@ function scr_enemy_walk()
 	    {
 	        if (movespeed > 0 && grounded)
 	        {
-	            if (object_index == obj_ninja)
-	            {
-	                vsp = -11;
-	                image_index = 0;
-	                image_xscale = -sign(x - obj_player.x);
-	                state = 94;
-	            }
-	            else if (object_index == obj_forknight)
+	            if (object_index == obj_forknight)
 	            {
 	                image_xscale *= -1;
 	                image_index = 0;

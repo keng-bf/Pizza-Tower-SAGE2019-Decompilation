@@ -1,14 +1,8 @@
 if (global.panic == 0 && global.snickchallenge == 0)
 {
-    if (instance_exists(obj_pepperman))
-    {
-        audio_stop_all();
-        scr_sound(mu_chase);
-    }
-    
     var roomname = room_get_name(room);
     
-    if (string_letters(roomname) == "Realtitlescreen" || string_letters(roomname) == "Realtitlescreen")
+    if (string_letters(roomname) == "Realtitlescreen")
     {
         if (!audio_is_playing(mu_title))
         {
@@ -28,7 +22,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
         }
     }
     
-    if (string_letters(roomname) == "PProom" || string_letters(roomname) == "PProom")
+    if (string_letters(roomname) == "PProom")
     {
         if (!audio_is_playing(mu_tutorial))
         {

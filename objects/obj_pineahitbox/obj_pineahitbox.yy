@@ -31,10 +31,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_coolpineahitbox",
-    "path": "sprites/spr_coolpineahitbox/spr_coolpineahitbox.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": false,
 }
