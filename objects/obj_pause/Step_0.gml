@@ -64,7 +64,7 @@ if (pause == 1)
                 scr_soundeffect(sfx_enemyprojectile);
             }
         }
-        else if (global.snickchallenge == 1)
+        else if (global.snickchallenge)
         {
             instance_activate_all();
             room = medieval_1;

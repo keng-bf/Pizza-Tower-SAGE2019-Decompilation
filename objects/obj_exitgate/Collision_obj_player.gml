@@ -1,6 +1,6 @@
 with (obj_player)
 {
-    if (grounded && (x > (other.x - 160) && x < (other.x + 160)) && key_up && (state == 0 || state == 68 || state == 69 || state == 89) && (global.panic == 1 || global.snickchallenge == 1))
+    if (grounded && (x > (other.x - 160) && x < (other.x + 160)) && key_up && (state == 0 || state == 68 || state == 69 || state == 89) && (global.panic || global.snickchallenge))
     {
         targetDoor = "none";
         obj_camera.alarm[2] = -1;
@@ -9,7 +9,7 @@ with (obj_player)
         {
             global.rank = "s";
             
-            if (global.snickchallenge == 1)
+            if (global.snickchallenge)
                 global.SAGEsnicksrank = 1;
         }
         else if (global.collect > global.arank)
@@ -49,48 +49,7 @@ with (obj_player)
         audio_stop_sound(mu_snickchallengeend);
         ini_open("saveData.ini");
         var roomname = room_get_name(room);
-        
-        if (string_letters(roomname) == "entrance")
-        {
-            ini_open("saveData.ini");
-            
-            if (global.entrancehighscore < global.collect)
-                ini_write_string("Highscore", "entrance", global.collect);
-            
-            if (global.entrancehighscore < global.collect)
-                ini_write_string("Highscore", "entrance", global.collect);
-            
-            if (global.entrancetoppin1 != 1)
-                ini_write_string("Toppin", "entrance1", global.shroomfollow);
-            
-            if (global.entrancetoppin2 != 1)
-                ini_write_string("Toppin", "entrance2", global.cheesefollow);
-            
-            if (global.entrancetoppin3 != 1)
-                ini_write_string("Toppin", "entrance3", global.tomatofollow);
-            
-            if (global.entrancetoppin4 != 1)
-                ini_write_string("Toppin", "entrance4", global.sausagefollow);
-            
-            if (global.entrancetoppin5 != 1)
-                ini_write_string("Toppin", "entrance5", global.pineapplefollow);
-            
-            if (global.rank == "s")
-                ini_write_string("Ranks", "entrance", global.rank);
-            
-            if (global.rank == "a" && "s" != ini_read_string("Ranks", "entrance", "none"))
-                ini_write_string("Ranks", "entrance", global.rank);
-            
-            if (global.rank == "b" && "s" != ini_read_string("Ranks", "entrance", "none") && "a" != ini_read_string("Ranks", "entrance", "none"))
-                ini_write_string("Ranks", "entrance", global.rank);
-            
-            if (global.rank == "c" && "s" != ini_read_string("Ranks", "entrance", "none") && "a" != ini_read_string("Ranks", "entrance", "none") && "b" != ini_read_string("Ranks", "entrance", "none"))
-                ini_write_string("Ranks", "entrance", global.rank);
-            
-            if (global.rank == "d" && "s" != ini_read_string("Ranks", "entrance", "none") && "a" != ini_read_string("Ranks", "entrance", "none") && "b" != ini_read_string("Ranks", "entrance", "none") && "c" != ini_read_string("Ranks", "entrance", "none"))
-                ini_write_string("Ranks", "entrance", global.rank);
-        }
-        
+		
         if (string_letters(roomname) == "medieval")
         {
             ini_open("saveData.ini");

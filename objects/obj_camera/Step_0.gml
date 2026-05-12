@@ -34,12 +34,12 @@ if (global.seconds > 59)
     global.seconds -= 59;
 }
 
-if ((global.panic == 1 && global.minutes < 1) || obj_player1.sprite_index == spr_player_timesup)
+if ((global.panic && global.minutes < 1) || obj_player1.sprite_index == spr_player_timesup)
 {
     shake_mag = 2;
     shake_mag_acc = 3 / room_speed;
 }
-else if (global.panic == 1 && basement == 0)
+else if (global.panic && basement == 0)
 {
     shake_mag = 2;
     shake_mag_acc = 3 / room_speed;

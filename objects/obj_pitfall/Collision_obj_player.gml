@@ -7,27 +7,6 @@ with (other.id)
     {
         obj_player1.targetDoor = other.targetDoor;
         obj_player1.targetRoom = other.targetRoom;
-        
-        if (instance_exists(obj_player2))
-        {
-            if (object_index == obj_player2)
-            {
-                obj_player1.x = obj_player2.x;
-                obj_player1.y = obj_player2.y;
-                obj_player1.state = 0;
-            }
-            
-            if (object_index == obj_player1)
-            {
-                obj_player2.x = obj_player1.x;
-                obj_player2.y = obj_player1.y;
-                obj_player2.state = 0;
-            }
-            
-            obj_player2.targetDoor = other.targetDoor;
-            obj_player2.targetRoom = other.targetRoom;
-        }
-        
         other.visited = 1;
         image_index = 0;
         

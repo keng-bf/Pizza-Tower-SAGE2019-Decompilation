@@ -31,10 +31,6 @@ function scr_enemy_grabbed()
 	    if (key_slap && sprite_index == spr_grab)
 	    {
 	        global.hit += 1;
-	        
-	        if (other.object_index == obj_pizzaball)
-	            global.golfhit += 1;
-	        
 	        global.combotime = 60;
 	        image_index = 0;
 	        sprite_index = choose(spr_suplexmash1, spr_suplexmash2, spr_suplexmash3, spr_suplexmash4);
@@ -65,10 +61,6 @@ function scr_enemy_grabbed()
 	{
 	    alarm[3] = 3;
 	    global.hit += 1;
-	    
-	    if (other.object_index == obj_pizzaball)
-	        global.golfhit += 1;
-	    
 	    hp -= 1;
 	    instance_create(x + (obj_player1.xscale * 30), y, obj_bumpeffect);
 	    alarm[1] = 5;
@@ -101,10 +93,6 @@ function scr_enemy_grabbed()
 	{
 	    alarm[3] = 3;
 	    global.hit += 1;
-	    
-	    if (other.object_index == obj_pizzaball)
-	        global.golfhit += 1;
-	    
 	    hp -= 1;
 	    instance_create(x + (-obj_player1.xscale * 50), y, obj_bumpeffect);
 	    alarm[1] = 5;
@@ -131,10 +119,6 @@ function scr_enemy_grabbed()
 	{
 	    alarm[3] = 3;
 	    global.hit += 1;
-	    
-	    if (other.object_index == obj_pizzaball)
-	        global.golfhit += 1;
-	    
 	    hp -= 1;
 	    instance_create(x, y + 20, obj_bumpeffect);
 	    alarm[1] = 5;
@@ -188,10 +172,6 @@ function scr_enemy_grabbed()
 	    
 	    alarm[3] = 3;
 	    global.hit += 1;
-	    
-	    if (other.object_index == obj_pizzaball)
-	        global.golfhit += 1;
-	    
 	    global.combotime = 60;
 	    alarm[1] = 5;
 	    thrown = 1;
@@ -217,10 +197,6 @@ function scr_enemy_grabbed()
 	if (obj_player1.state == 40)
 	{
 	    global.hit += 1;
-	    
-	    if (other.object_index == obj_pizzaball)
-	        global.golfhit += 1;
-	    
 	    alarm[1] = 5;
 	    thrown = 1;
 	    x = obj_player1.x;
@@ -234,10 +210,6 @@ function scr_enemy_grabbed()
 	{
 	    alarm[3] = 3;
 	    global.hit += 1;
-	    
-	    if (other.object_index == obj_pizzaball)
-	        global.golfhit += 1;
-	    
 	    hp -= 1;
 	    instance_create(x + (-obj_player1.xscale * 15), y - 50, obj_bumpeffect);
 	    alarm[1] = 5;

@@ -6,9 +6,6 @@ draw_set_color(c_white);
 
 if (place_meeting(x, y, obj_player))
 {
-    if (level == "entrance")
-        draw_text(x, y, global.entrancehighscore);
-    
     if (level == "medieval")
     {
         draw_text(x, y - 150, global.medievalhighscore);
@@ -29,34 +26,6 @@ if (place_meeting(x, y, obj_player))
     
     if (level == "snickchallenge")
         draw_text(x, y - 150, global.snickchallengehighscore);
-    
-    if (level == "entrance")
-    {
-        if (global.entrancetoppin1 == 1)
-            draw_sprite(spr_pizzakinshroom, -1, x - 75, y - 100);
-        else
-            draw_sprite(spr_pizzakinshroom_pause, -1, x - 75, y - 100);
-        
-        if (global.entrancetoppin2 == 1)
-            draw_sprite(spr_pizzakincheese, -1, x - 35, y - 100);
-        else
-            draw_sprite(spr_pizzakincheese_pause, -1, x - 35, y - 100);
-        
-        if (global.entrancetoppin3 == 1)
-            draw_sprite(spr_pizzakintomato, -1, x, y - 100);
-        else
-            draw_sprite(spr_pizzakintomato_pause, -1, x, y - 100);
-        
-        if (global.entrancetoppin4 == 1)
-            draw_sprite(spr_pizzakinsausage, -1, x + 35, y - 100);
-        else
-            draw_sprite(spr_pizzakinsausage_pause, -1, x + 35, y - 100);
-        
-        if (global.entrancetoppin5 == 1)
-            draw_sprite(spr_pizzakinpineapple, -1, x + 75, y - 100);
-        else
-            draw_sprite(spr_pizzakinpineapple_pause, -1, x + 75, y - 100);
-    }
     
     if (level == "medieval")
     {

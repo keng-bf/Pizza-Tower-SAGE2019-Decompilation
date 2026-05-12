@@ -1,4 +1,4 @@
-if (global.panic == 1)
+if (global.panic)
     visible = true;
 else
     visible = false;

@@ -86,23 +86,6 @@ if (x != obj_player1.x && state != 95 && obj_player.state != 1 && bombreset == 0
     }
 }
 
-if (instance_exists(obj_player2))
-{
-    if (x != obj_player2.x && state != 95 && bombreset == 0 && grounded)
-    {
-        if ((obj_player2.x > (x - 100) && obj_player2.x < (x + 100)) && (y <= (obj_player2.y + 100) && y >= (obj_player2.y - 100)))
-        {
-            if (state == 100 || state == 92)
-            {
-                image_index = 0;
-                sprite_index = spr_pepgoblin_kick;
-                image_xscale = -sign(x - obj_player.x);
-                state = 95;
-            }
-        }
-    }
-}
-
 if (grounded && state == 95 && floor(image_index) == 3)
     vsp = -5;
 

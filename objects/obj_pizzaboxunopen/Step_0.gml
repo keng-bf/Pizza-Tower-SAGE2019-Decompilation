@@ -3,57 +3,6 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
     if (!audio_is_playing(sfx_collecttoppin))
         scr_soundeffect(sfx_collecttoppin);
     
-    if (content == obj_noisebomb)
-    {
-        with (obj_player)
-        {
-            state = 50;
-            sprite_index = spr_player_bossintro;
-            image_index = 0;
-        }
-        
-        with (instance_create(x, y - 25, content))
-            sprite_index = spr_noisebomb_intro;
-        
-        instance_create(x, y, obj_taunteffect);
-        instance_create(x, y + 600, obj_itspizzatime);
-        global.panic = 1;
-        
-        switch (room)
-        {
-            case floor1_room11:
-                global.minutes = 2;
-                global.seconds = 30;
-                break;
-            
-            case floor2_roomtreasure:
-                global.minutes = 2;
-                global.seconds = 40;
-                break;
-            
-            case floor3_roomtreasure:
-                global.minutes = 2;
-                global.seconds = 30;
-                break;
-            
-            case floor4_roomtreasure:
-                global.minutes = 2;
-                global.seconds = 0;
-                break;
-            
-            case floor5_roomtreasure:
-                global.minutes = 2;
-                global.seconds = 0;
-                break;
-        }
-        
-        global.wave = 0;
-        global.maxwave = ((global.minutes * 60) + global.seconds) * 60;
-        
-        if (global.panicbg)
-            scr_panicbg_init();
-    }
-    
     if (content == obj_pizzakinshroom)
     {
         with (instance_create(x, y, obj_smallnumber))

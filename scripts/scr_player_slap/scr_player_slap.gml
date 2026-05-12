@@ -14,18 +14,9 @@ function scr_player_slap()
 	move = key_left + key_right;
 	
 	if (sprite_index != spr_player_slapdash)
-	{
-	    if (!place_meeting(x, y + 1, obj_railh) && !place_meeting(x, y + 1, obj_railh2))
-	        hsp = move * movespeed;
-	    else if (place_meeting(x, y + 1, obj_railh))
-	        hsp = (move * movespeed) - 5;
-	    else if (place_meeting(x, y + 1, obj_railh2))
-	        hsp = (move * movespeed) + 5;
-	}
+	    hsp = move * movespeed;
 	else
-	{
 	    hsp = xscale * movespeed;
-	}
 	
 	if (sprite_index != spr_player_slapdash)
 	{

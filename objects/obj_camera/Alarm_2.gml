@@ -7,7 +7,7 @@ if (global.collect > 0)
 if (global.collect > 0)
     global.collect -= 5;
 
-if (global.snickchallenge == 1 && global.collect == 0)
+if (global.snickchallenge && global.collect == 0)
 {
     with (obj_player)
     {

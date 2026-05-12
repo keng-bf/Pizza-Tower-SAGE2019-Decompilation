@@ -7,14 +7,6 @@ function scr_player_mach2()
 	}
 	
 	hsp = xscale * movespeed;
-	
-	if (!place_meeting(x, y + 1, obj_railh) && !place_meeting(x, y + 1, obj_railh2))
-	    hsp = xscale * movespeed;
-	else if (place_meeting(x, y + 1, obj_railh))
-	    hsp = (xscale * movespeed) - 5;
-	else if (place_meeting(x, y + 1, obj_railh2))
-	    hsp = (xscale * movespeed) + 5;
-	
 	move2 = key_right2 + key_left2;
 	move = key_right + key_left;
 	

@@ -46,22 +46,6 @@ switch (state)
         scr_player_tacklecharge();
         break;
     
-    case 12:
-        scr_player_cheesepep();
-        break;
-    
-    case 10:
-        scr_player_cheeseball();
-        break;
-    
-    case 13:
-        scr_player_cheesepepstick();
-        break;
-    
-    case 14:
-        scr_player_boxxedpep();
-        break;
-    
     case 15:
         scr_player_pistolaim();
         break;
@@ -558,7 +542,7 @@ if (state == 22 || sprite_index == spr_knightpep_start || sprite_index == spr_kn
 else
     cutscene = 0;
 
-if ((place_meeting(x, y, obj_door) || place_meeting(x, y, obj_snick) || place_meeting(x, y, obj_keydoor) || (place_meeting(x, y, obj_exitgate) && global.panic == 1)) && !instance_exists(obj_uparrow) && scr_solid(x, y + 1) && state == 0)
+if ((place_meeting(x, y, obj_door) || place_meeting(x, y, obj_snick) || place_meeting(x, y, obj_keydoor) || (place_meeting(x, y, obj_exitgate) && global.panic)) && !instance_exists(obj_uparrow) && scr_solid(x, y + 1) && state == 0)
     instance_create(x, y, obj_uparrow);
 
 if (state == 69 && !instance_exists(obj_speedlines))

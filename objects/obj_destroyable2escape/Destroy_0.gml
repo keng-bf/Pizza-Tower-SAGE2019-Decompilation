@@ -1,6 +1,6 @@
 if (ds_list_find_index(global.saveroom, id) == -1)
 {
-    if (global.panic == 1)
+    if (global.panic)
     {
         repeat (8)
         {

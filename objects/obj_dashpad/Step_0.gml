@@ -1,4 +1,4 @@
-if (global.panic == 1 && turned == 0)
+if (global.panic && turned == 0)
 {
     image_xscale *= -1;
     turned = 1;

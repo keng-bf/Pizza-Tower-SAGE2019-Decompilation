@@ -1,6 +1,6 @@
 with (obj_player1)
 {
-    if (key_up && grounded && (state == 0 || state == 68 || state == 69 || state == 89) && !instance_exists(obj_noisesatellite) && !instance_exists(obj_fadeout) && state != 63 && state != 60)
+    if (key_up && grounded && (state == 0 || state == 68 || state == 69 || state == 89) && !instance_exists(obj_fadeout) && state != 63 && state != 60)
     {
         audio_stop_all();
         backtohubstartx = x;

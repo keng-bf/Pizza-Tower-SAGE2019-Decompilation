@@ -12,13 +12,6 @@ with (obj_player)
             x = other.x;
             obj_player1.targetDoor = other.targetDoor;
             obj_player1.targetRoom = other.targetRoom;
-            
-            if (instance_exists(obj_player2))
-            {
-                obj_player2.targetDoor = other.targetDoor;
-                obj_player2.targetRoom = other.targetRoom;
-            }
-            
             sprite_index = spr_downpizzabox;
             image_index = 0;
             state = 77;
@@ -38,13 +31,6 @@ with (obj_player)
             x = other.x;
             obj_player1.targetDoor = other.targetDoor;
             obj_player1.targetRoom = other.targetRoom;
-            
-            if (instance_exists(obj_player2))
-            {
-                obj_player2.targetDoor = other.targetDoor;
-                obj_player2.targetRoom = other.targetRoom;
-            }
-            
             sprite_index = spr_uppizzabox;
             image_index = 0;
             state = 77;

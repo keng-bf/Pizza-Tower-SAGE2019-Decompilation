@@ -34,15 +34,6 @@ if (instance_exists(ID))
             }
         }
         
-        if (object_index == obj_noisecrusher)
-        {
-            if (state != 93)
-            {
-                hitboxcreate = 0;
-                instance_destroy(other.id);
-            }
-        }
-        
         if (object_index == obj_peasanto || object_index == obj_fencer || object_index == obj_ninja || object_index == obj_pizzice || object_index == obj_ancho)
         {
             if (state != 94)

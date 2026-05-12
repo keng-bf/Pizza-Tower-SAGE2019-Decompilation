@@ -17,11 +17,6 @@ function scr_enemy_stun()
 	    hsp = 0;
 	}
 	
-	if (place_meeting(x, y + 1, obj_railh))
-	    hsp = -5;
-	else if (place_meeting(x, y + 1, obj_railh2))
-	    hsp = 5;
-	
 	if (place_meeting(x - image_xscale, y, obj_solid) && !place_meeting(x - image_xscale, y, obj_destructibles))
 	{
 	    with (instance_create(x, y, obj_bulletimpact))

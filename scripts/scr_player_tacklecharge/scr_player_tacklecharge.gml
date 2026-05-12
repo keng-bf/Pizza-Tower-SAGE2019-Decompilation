@@ -3,13 +3,7 @@ function scr_player_tacklecharge()
 	if (windingAnim < 2000)
 	    windingAnim++;
 	
-	if (!place_meeting(x, y + 1, obj_railh) && !place_meeting(x, y + 1, obj_railh2))
-	    hsp = xscale * movespeed;
-	else if (place_meeting(x, y + 1, obj_railh))
-	    hsp = (xscale * movespeed) - 5;
-	else if (place_meeting(x, y + 1, obj_railh2))
-	    hsp = (xscale * movespeed) + 5;
-	
+	hsp = xscale * movespeed;
 	move2 = key_right2 + key_left2;
 	move = key_right + key_left;
 	movespeed = 10;
@@ -57,10 +51,6 @@ function scr_player_tacklecharge()
 	        flash = 1;
 	        global.combotime = 60;
 	        global.hit += 1;
-	        
-	        if (other.object_index == obj_pizzaball)
-	            global.golfhit += 1;
-	        
 	        hp -= 5;
 	        alarm[1] = 5;
 	        thrown = 1;
@@ -97,10 +87,6 @@ function scr_player_tacklecharge()
 	        flash = 1;
 	        global.combotime = 60;
 	        global.hit += 1;
-	        
-	        if (other.object_index == obj_pizzaball)
-	            global.golfhit += 1;
-	        
 	        hp -= 2;
 	        alarm[1] = 5;
 	        grav = 0.5;

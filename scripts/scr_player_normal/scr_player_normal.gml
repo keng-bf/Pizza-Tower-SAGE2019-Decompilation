@@ -9,13 +9,7 @@ function scr_player_normal()
 	
 	mach2 = 0;
 	move = key_left + key_right;
-	
-	if (!place_meeting(x, y + 1, obj_railh) && !place_meeting(x, y + 1, obj_railh2))
-	    hsp = move * movespeed;
-	else if (place_meeting(x, y + 1, obj_railh))
-	    hsp = (move * movespeed) - 5;
-	else if (place_meeting(x, y + 1, obj_railh2))
-	    hsp = (move * movespeed) + 5;
+	hsp = move * movespeed;
 	
 	if (character == "P")
 	{
@@ -70,7 +64,7 @@ function scr_player_normal()
 	                        
 	                        if (global.minutes == 0 && global.seconds == 0)
 	                            sprite_index = spr_hurtidle;
-	                        else if (global.panic == 1 || global.snickchallenge == 1)
+	                        else if (global.panic || global.snickchallenge)
 	                            sprite_index = spr_player_panic;
 	                        else if (angry == 1)
 	                            sprite_index = spr_player_3hpidle;

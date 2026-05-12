@@ -11,10 +11,5 @@ if global.combo != 0 && global.combotime != 0 && (tvsprite == spr_tvdefault || t
 if tvsprite == spr_tvdefault
 {
     chose = 0;
-    
-    if room != boss_room1
-        draw_text(832, 60, string_hash_to_newline(global.collect));
+    draw_text(832, 60, string_hash_to_newline(global.collect));
 }
-
-if instance_exists(obj_pizzaball)
-    draw_text(832, 300, string_hash_to_newline(string(global.golfhit) + " " + "GOLF HIT"));

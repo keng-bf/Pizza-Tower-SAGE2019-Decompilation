@@ -1,4 +1,4 @@
-if (global.panic == 1 || global.snickchallenge == 1)
+if (global.panic || global.snickchallenge)
 {
     global.seconds -= 1;
     

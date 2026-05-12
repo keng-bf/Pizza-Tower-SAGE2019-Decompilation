@@ -1,2 +1,2 @@
-if (global.panic == 1)
+if (global.panic)
     image_index = 1;

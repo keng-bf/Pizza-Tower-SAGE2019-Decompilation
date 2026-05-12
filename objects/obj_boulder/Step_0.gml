@@ -1,4 +1,4 @@
-if ((obj_player.x > (x - 100) && obj_player.x < (x + 100)) && global.panic == 1)
+if ((obj_player.x > (x - 100) && obj_player.x < (x + 100)) && global.panic)
 {
     if (activated == 0)
     {

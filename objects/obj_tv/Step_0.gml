@@ -1,45 +1,5 @@
-if (room == rank_room || room == timesuproom || room == boss_room1 || room == Realtitlescreen)
+if (room == rank_room || room == timesuproom || room == Realtitlescreen)
     alpha = 0;
-
-if (room == entrance_1)
-{
-    global.srank = 5750;
-    global.arank = global.srank - (global.srank / 4);
-    global.brank = global.srank - ((global.srank / 4) * 2);
-    global.crank = global.srank - ((global.srank / 4) * 3);
-}
-
-if (room == medieval_1 && global.snickchallenge == 0)
-{
-    global.srank = 11000;
-    global.arank = global.srank - (global.srank / 4);
-    global.brank = global.srank - ((global.srank / 4) * 2);
-    global.crank = global.srank - ((global.srank / 4) * 3);
-}
-
-if (room == medieval_1 && global.snickchallenge == 1)
-{
-    global.srank = 8300;
-    global.arank = global.srank - (global.srank / 4);
-    global.brank = global.srank - ((global.srank / 4) * 2);
-    global.crank = global.srank - ((global.srank / 4) * 3);
-}
-
-if (room == ruin_1 && global.snickchallenge == 0)
-{
-    global.srank = 11600;
-    global.arank = global.srank - (global.srank / 4);
-    global.brank = global.srank - ((global.srank / 4) * 2);
-    global.crank = global.srank - ((global.srank / 4) * 3);
-}
-
-if (room == dungeon_1 && global.snickchallenge == 0)
-{
-    global.srank = 10400;
-    global.arank = global.srank - (global.srank / 4);
-    global.brank = global.srank - ((global.srank / 4) * 2);
-    global.crank = global.srank - ((global.srank / 4) * 3);
-}
 
 if (showtext == 1)
 {
@@ -62,7 +22,7 @@ if (!(obj_player.state == 23 && obj_player.state == 24 && obj_player.state == 17
 
 if (obj_player.y < 200 && obj_player.x > (room_width - 200))
     alpha = 0.5;
-else if (!(room == rank_room || room == timesuproom || room == boss_room1 || room == Realtitlescreen))
+else if (!(room == rank_room || room == timesuproom || room == Realtitlescreen))
     alpha = 1;
 
 if (instance_exists(obj_itspizzatime))

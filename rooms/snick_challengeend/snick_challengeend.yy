@@ -2,7 +2,7 @@
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
   "name": "snick_challengeend",
-  "creationCodeFile": "${project_dir}/rooms/snick_challengeend/RoomCreationCode.gml",
+  "creationCodeFile": "rooms/snick_challengeend/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,

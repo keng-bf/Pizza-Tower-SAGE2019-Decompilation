@@ -1,4 +1,4 @@
-if (global.panic == 1 && start == 0)
+if (global.panic && start == 0)
 {
     alarm[0] = 5;
     start = 1;
