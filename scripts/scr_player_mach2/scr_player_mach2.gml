@@ -46,7 +46,7 @@ function scr_player_mach2()
 	
 	if (grounded && vsp > 0)
 	{
-	    if (machpunchAnim == 0 && sprite_index != spr_mach && sprite_index != spr_player_mach3 && sprite_index != spr_player_machhit)
+	    if (machpunchAnim == 0 && sprite_index != spr_mach && sprite_index != spr_player_machhit)
 	    {
 	        if (sprite_index != spr_player_machhit && sprite_index != spr_player_rollgetup)
 	            sprite_index = spr_mach;

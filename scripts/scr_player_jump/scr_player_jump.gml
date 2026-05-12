@@ -209,22 +209,6 @@ function scr_player_jump()
 	    state = 76;
 	}
 	
-	if (character == "N" && key_jump && sprite_index != spr_playerN_glide)
-	{
-	    jumpstop = 0;
-	    sprite_index = spr_playerN_glide;
-	    vsp = -11;
-	}
-	
-	if (key_slap2 && character == "N" && !instance_exists(obj_bomb))
-	{
-	    with (instance_create(x, y, obj_bomb))
-	    {
-	        vsp = -5;
-	        hsp = other.xscale * 5;
-	    }
-	}
-	
 	if (key_slap2 && character == "P" && suplexmove == 0 && !(shotgunAnim == 1 && key_up))
 	{
 	    suplexmove = 1;

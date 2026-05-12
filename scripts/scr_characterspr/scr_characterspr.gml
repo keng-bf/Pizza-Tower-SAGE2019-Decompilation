@@ -8,7 +8,6 @@ function scr_characterspr()
 	    spr_idle = spr_player_idle;
 	    spr_hurt = spr_player_hurt;
 	    spr_jump = spr_player_jump;
-	    spr_jump2 = spr_player_jump2;
 	    spr_fall = spr_player_fall;
 	    spr_fall2 = spr_player_fall2;
 	    spr_crouch = spr_player_crouch;
@@ -130,7 +129,6 @@ function scr_characterspr()
 	    spr_idle = spr_snick_idle;
 	    spr_hurt = spr_snick_hurt;
 	    spr_jump = spr_snick_bodyslamstart;
-	    spr_jump2 = spr_snick_fall;
 	    spr_fall = spr_snick_fall;
 	    spr_fall2 = spr_snick_fall;
 	    spr_crouch = spr_snick_idle;

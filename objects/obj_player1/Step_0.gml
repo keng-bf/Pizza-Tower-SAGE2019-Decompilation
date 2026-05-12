@@ -34,10 +34,6 @@ switch (state)
         scr_player_transitioncutscene();
         break;
     
-    case 8:
-        scr_playerN_hookshot();
-        break;
-    
     case 11:
         scr_player_slap();
         break;
@@ -395,15 +391,6 @@ if (sprite_index == spr_player_winding && state != 0)
 
 if (state != 45)
     swingdingbuffer = 0;
-
-if (sprite_index == spr_player_idlevomit && image_index > 28 && image_index < 43)
-    instance_create(x + random_range(-5, 5), y + 46, obj_vomit);
-
-if (sprite_index == spr_player_idlevomitblood && image_index > 28 && image_index < 43)
-{
-    with (instance_create(x + random_range(-5, 5), y + 46, obj_vomit))
-        sprite_index = spr_vomit2;
-}
 
 if (global.playerhealth == 1 && !instance_exists(obj_sweat) && obj_player.state == 0)
     instance_create(x, y, obj_sweat);
