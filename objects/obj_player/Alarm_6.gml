@@ -1,2 +1,3 @@
 image_alpha = 1;
-alarm[5] = 3;
+if hurted != 0
+	alarm[5] = 3;

@@ -28,7 +28,6 @@ function scr_player_gameover()
 	}
 	
 	hurted = 0;
-	inv_frames = 0;
 	
 	if (place_meeting(x + floor(hsp), y, obj_null))
 	{

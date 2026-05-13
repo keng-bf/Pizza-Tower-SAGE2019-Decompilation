@@ -13,7 +13,6 @@ function scr_player_comingoutdoor()
 	
 	if (floor(image_index) == (image_number - 1))
 	{
-	    start_running = 1;
 	    movespeed = 0;
 	    state = 0;
 	    image_alpha = 1;

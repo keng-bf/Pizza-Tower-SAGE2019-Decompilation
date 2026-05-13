@@ -50,7 +50,6 @@ function scr_player_tacklecharge()
 	        instance_create(x, y, obj_baddiegibs);
 	        flash = 1;
 	        global.combotime = 60;
-	        global.hit += 1;
 	        hp -= 5;
 	        alarm[1] = 5;
 	        thrown = 1;
@@ -86,7 +85,6 @@ function scr_player_tacklecharge()
 	        instance_create(x, y, obj_baddiegibs);
 	        flash = 1;
 	        global.combotime = 60;
-	        global.hit += 1;
 	        hp -= 2;
 	        alarm[1] = 5;
 	        grav = 0.5;

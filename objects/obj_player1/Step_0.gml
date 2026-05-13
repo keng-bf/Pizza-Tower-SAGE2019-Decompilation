@@ -22,16 +22,8 @@ switch (state)
         scr_player_ejected();
         break;
     
-    case 6:
-        scr_player_firemouth();
-        break;
-    
     case 5:
         scr_player_fireass();
-        break;
-    
-    case 4:
-        scr_player_transitioncutscene();
         break;
     
     case 11:
@@ -40,10 +32,6 @@ switch (state)
     
     case 9:
         scr_player_tacklecharge();
-        break;
-    
-    case 15:
-        scr_player_pistolaim();
         break;
     
     case 16:
@@ -60,10 +48,6 @@ switch (state)
     
     case 19:
         scr_player_secondjump();
-        break;
-    
-    case 20:
-        scr_player_chainsawbump();
         break;
     
     case 21:
@@ -94,10 +78,6 @@ switch (state)
         scr_player_grabbing();
         break;
     
-    case 28:
-        scr_player_chainsawpogo();
-        break;
-    
     case 29:
         scr_player_shotgunjump();
         break;
@@ -110,10 +90,6 @@ switch (state)
         scr_player_highjump();
         break;
     
-    case 32:
-        scr_player_chainsaw();
-        break;
-    
     case 33:
         scr_player_facestomp();
         break;
@@ -124,10 +100,6 @@ switch (state)
     
     case 36:
         scr_player_machroll();
-        break;
-    
-    case 38:
-        scr_player_pistol();
         break;
     
     case 37:
@@ -302,38 +274,6 @@ switch (state)
         scr_player_door();
         break;
     
-    case 83:
-        scr_player_barrelnormal();
-        break;
-    
-    case 82:
-        scr_player_barrelfall();
-        break;
-    
-    case 81:
-        scr_player_barrelmach1();
-        break;
-    
-    case 80:
-        scr_player_barrelmach2();
-        break;
-    
-    case 79:
-        scr_player_barrelfloat();
-        break;
-    
-    case 78:
-        scr_player_barrelcrouch();
-        break;
-    
-    case 84:
-        scr_player_barrelslipnslide();
-        break;
-    
-    case 85:
-        scr_player_barrelroll();
-        break;
-    
     case 86:
         scr_player_current();
         break;
@@ -409,11 +349,8 @@ if (input_buffer_secondjump < 8)
 if (input_buffer_highjump < 8)
     input_buffer_highjump++;
 
-if (key_particles == 1)
+if (global.key_inv == 1)
     instance_create(random_range(x + 25, x - 25), random_range(y + 35, y - 25), obj_keyeffect);
-
-if (inv_frames == 0 && hurted == 0)
-    image_alpha = 1;
 
 if (state == 69 || state == 9 || state == 43 || state == 23 || state == 14 || state == 12 || state == 17 || state == 24 || state == 26 || state == 33 || state == 39 || state == 33 || state == 36 || state == 89 || state == 73 || state == 62)
     attacking = 1;
@@ -505,7 +442,7 @@ if (character == "S")
 
 if (character == "P" && !place_meeting(x, y, obj_solid))
 {
-    if (state != 71 && sprite_index != spr_bombpepintro && sprite_index != spr_knightpepthunder && state != 1 && state != 5 && state != 65 && state != 14 && (state != 38 && sprite_index != spr_player_crouchshoot) && state != 64 && state != 32 && state != 36 && state != 72 && state != 67 && state != 66)
+    if (state != 71 && sprite_index != spr_bombpepintro && sprite_index != spr_knightpepthunder && state != 1 && state != 5 && state != 65 && state != 14 && state != 64 && state != 32 && state != 36 && state != 72 && state != 67 && state != 66)
         mask_index = spr_player_mask;
     else
         mask_index = spr_crouchmask;

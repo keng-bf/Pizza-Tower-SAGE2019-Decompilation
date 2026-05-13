@@ -22,7 +22,6 @@ crouchslideAnim = true;
 crouchAnim = true;
 machhitAnim = false;
 stompAnim = false;
-inv_frames = 0;
 hurted = 0;
 autodash = 0;
 mach2 = 0;
@@ -47,11 +46,7 @@ global.combo = 0;
 global.combotime = 0;
 global.pizzacoin = 0;
 global.toppintotal = 1;
-global.hit = 0;
 global.baddieroom = ds_list_create();
-global.gotshotgun = 0;
-key_particles = 0;
-barrel = 0;
 bounce = 0;
 a = 0;
 idle = 0;
@@ -63,7 +58,6 @@ grinding = 0;
 machpunchAnim = 0;
 punch = 0;
 machfreefall = 0;
-shoot = 1;
 instakillmove = 0;
 windingAnim = 0;
 facestompAnim = 0;
@@ -76,8 +70,6 @@ cutscene = 0;
 grabbing = 0;
 dir = xscale;
 shotgunAnim = 0;
-goingdownslope = 0;
-goingupslope = 0;
 fallinganimation = 0;
 bombpeptimer = 100;
 suplexmove = 0;
@@ -105,32 +97,21 @@ ini_open("saveData.ini");
 global.option_fullscreen = ini_read_real("Option", "fullscreen", 1);
 global.option_resolution = ini_read_real("Option", "resolution", 1);
 ini_close();
-
-if global.option_fullscreen == 0
-    window_set_fullscreen(true);
-
-if global.option_fullscreen == 1
-    window_set_fullscreen(false);
-
-if global.option_resolution == 0
-    window_set_size(480, 270);
-
-if global.option_resolution == 1
-    window_set_size(960, 540);
-
-if global.option_resolution == 2
-    window_set_size(1920, 1080);
-
+window_set_fullscreen(!global.option_fullscreen);
+var _window = [
+	[480, 270],
+	[960, 540],
+	[1920, 1080],
+]
+window_set_size(_window[global.option_resolution][0], _window[global.option_resolution][1]);
 backtohubstartx = x;
 backtohubstarty = y;
 backtohubroom = Realtitlescreen;
-global.style = 0;
 slapcharge = 0;
 slaphand = 1;
 slapbuffer = 8;
 slapflash = 0;
 freefallsmash = 0;
-costumercutscenetimer = 0;
 heavy = 0;
 lastroom_x = 0;
 lastroom_y = 0;

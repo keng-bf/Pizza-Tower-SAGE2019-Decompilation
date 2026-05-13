@@ -31,7 +31,6 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                 scr_soundeffect(sfx_punch);
                 instance_destroy(other.baddieID);
                 instance_destroy(other.id);
-                global.hit += 1;
                 global.combotime = 60;
                 
                 if (!grounded && state != 73 && key_jump2)
@@ -154,7 +153,6 @@ if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1
                     
                     instance_destroy(other.baddieID);
                     instance_destroy(other.id);
-                    global.hit += 1;
                     global.combotime = 60;
                 }
             }

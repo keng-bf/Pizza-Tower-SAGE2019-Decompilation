@@ -4,7 +4,6 @@ with (obj_player1)
     {
         instance_destroy(other.id);
         global.key_inv = 1;
-        key_particles = 1;
         alarm[7] = 30;
         scr_soundeffect(sfx_collecttoppin);
     }

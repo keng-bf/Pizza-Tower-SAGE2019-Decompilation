@@ -20,12 +20,8 @@ function scr_player_fireass()
 	    
 	    hsp = move * movespeed;
 	    movespeed = 4;
-	    
-	    if (place_meeting(x, y + 1, obj_haystack))
-	    {
-	        vsp = -20;
-	    }
-	    else if (grounded && vsp > 0)
+		
+	    if (grounded && vsp > 0)
 	    {
 	        movespeed = 6;
 	        sprite_index = spr_fireassground;

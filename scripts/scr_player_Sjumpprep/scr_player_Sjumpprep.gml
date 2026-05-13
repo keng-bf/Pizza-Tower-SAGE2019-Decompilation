@@ -51,7 +51,6 @@ function scr_player_Sjumpprep()
 	    }
 	}
 	
-	start_running = 1;
 	alarm[4] = 14;
 	jumpAnim = 1;
 	dashAnim = 1;

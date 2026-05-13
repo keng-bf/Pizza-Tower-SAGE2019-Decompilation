@@ -17,8 +17,6 @@ function scr_getinput()
 	key_taunt2 = keyboard_check_pressed(global.key_taunt) || gamepad_button_check_pressed(0, global.key_tauntC);
 	key_attack = keyboard_check(global.key_attack) || gamepad_button_check(0, global.key_attackC) || gamepad_button_check(0, gp_face2) || gamepad_button_check(0, gp_shoulderrb);
 	key_attack2 = keyboard_check_pressed(global.key_attack) || gamepad_button_check_pressed(0, global.key_attackC) || gamepad_button_check_pressed(0, gp_face2) || gamepad_button_check_pressed(0, gp_shoulderrb);
-	key_shoot = keyboard_check(global.key_shoot) || gamepad_button_check(0, global.key_shootC);
-	key_shoot2 = keyboard_check_pressed(global.key_shoot) || gamepad_button_check_pressed(0, global.key_shootC);
 	key_start = keyboard_check_pressed(global.key_start) || gamepad_button_check_pressed(0, global.key_startC);
 	key_escape = keyboard_check_pressed(vk_escape) || gamepad_button_check(0, gp_select);
 	
@@ -37,7 +35,6 @@ function scr_getinput()
 	    global.key_jump = ini_write_string("ControlsKeys", "jump", 90);
 	    global.key_slap = ini_write_string("ControlsKeys", "slap", 88);
 	    global.key_taunt = ini_write_string("ControlsKeys", "taunt", 67);
-	    global.key_shoot = ini_write_string("ControlsKeys", "shoot", 67);
 	    global.key_attack = ini_write_string("ControlsKeys", "attack", 16);
 	    global.key_start = ini_write_string("ControlsKeys", "start", 27);
 	    global.key_upC = ini_write_string("ControllerButton", "up", 32781);
@@ -47,7 +44,6 @@ function scr_getinput()
 	    global.key_jumpC = ini_write_string("ControllerButton", "jump", 32769);
 	    global.key_slapC = ini_write_string("ControllerButton", "slap", 32771);
 	    global.key_tauntC = ini_write_string("ControllerButton", "taunt", 32772);
-	    global.key_shootC = ini_write_string("ControllerButton", "shoot", 32770);
 	    global.key_attackC = ini_write_string("ControllerButton", "attack", 32774);
 	    global.key_startC = ini_write_string("ControllerButton", "start", 32778);
 	    global.key_up = ini_read_string("ControlsKeys", "up", 38);
@@ -57,7 +53,6 @@ function scr_getinput()
 	    global.key_jump = ini_read_string("ControlsKeys", "jump", 90);
 	    global.key_slap = ini_read_string("ControlsKeys", "slap", 88);
 	    global.key_taunt = ini_read_string("ControlsKeys", "taunt", 67);
-	    global.key_shoot = ini_read_string("ControlsKeys", "shoot", 67);
 	    global.key_attack = ini_read_string("ControlsKeys", "attack", 16);
 	    global.key_start = ini_read_string("ControlsKeys", "start", 27);
 	    global.key_upC = ini_read_string("ControllerButton", "up", 32781);
@@ -67,7 +62,6 @@ function scr_getinput()
 	    global.key_jumpC = ini_read_string("ControllerButton", "jump", 32769);
 	    global.key_slapC = ini_read_string("ControllerButton", "slap", 32771);
 	    global.key_tauntC = ini_read_string("ControllerButton", "taunt", 32772);
-	    global.key_shootC = ini_read_string("ControllerButton", "shoot", 32770);
 	    global.key_attackC = ini_read_string("ControllerButton", "attack", 32774);
 	    global.key_startC = ini_read_string("ControllerButton", "start", 32778);
 	    ini_close();

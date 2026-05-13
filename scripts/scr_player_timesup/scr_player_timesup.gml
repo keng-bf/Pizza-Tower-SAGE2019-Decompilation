@@ -1,7 +1,6 @@
 function scr_player_timesup()
 {
 	xscale = 1;
-	inv_frames = 0;
 	sprite_index = spr_Timesup;
 	alarm[7] = -1;
 	alarm[8] = -1;

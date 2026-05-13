@@ -3,7 +3,6 @@ function scr_player_bossintro()
 	hsp = 0;
 	xscale = 1;
 	hurted = 0;
-	inv_frames = 0;
 	
 	if (sprite_index == spr_player_bossintro && floor(image_index) == (image_number - 1))
 	{

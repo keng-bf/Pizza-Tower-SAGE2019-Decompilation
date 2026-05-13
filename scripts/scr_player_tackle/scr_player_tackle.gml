@@ -7,7 +7,6 @@ function scr_player_tackle()
 	if (movespeed > 0)
 	    movespeed -= 0.5;
 	
-	start_running = 1;
 	jumpAnim = 1;
 	dashAnim = 1;
 	landAnim = 0;

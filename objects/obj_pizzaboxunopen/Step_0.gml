@@ -110,7 +110,6 @@ if (place_meeting(x, y, obj_player) && sprite_index == spr_pizzaboxunopen)
         
         instance_create(x, y, obj_taunteffect);
         global.combotime = 60;
-        global.style += 50;
         ds_list_add(global.saveroom, id);
         
         if (global.toppintotal < 5)

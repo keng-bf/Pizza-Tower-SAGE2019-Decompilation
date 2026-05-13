@@ -1,4 +1,4 @@
-with (other.id)
+with (other)
 {
     if ((state == 23 || state == 24 || state == 17) && cutscene == 0)
         continue;
@@ -29,7 +29,6 @@ with (other.id)
         
         movespeed = 8;
         vsp = -5;
-        timeuntilhpback = 300;
         instance_create(x, y, obj_spikehurteffect);
         state = 72;
         image_index = 0;
@@ -44,34 +43,20 @@ with (other.id)
         if (shotgunAnim == 0 && character == "P")
         {
             global.hurtcounter += 1;
-            
-            if (character == "P")
-            {
-                if (global.collect > 100)
-                    global.collect -= 100;
-                else
-                    global.collect = 0;
-            }
+            if (global.collect > 100)
+                global.collect -= 100;
+            else
+                global.collect = 0;
             
             if (global.collect != 0)
             {
-                instance_create(x, y, obj_pizzaloss);
-                instance_create(x, y, obj_pizzaloss);
-                instance_create(x, y, obj_pizzaloss);
-                instance_create(x, y, obj_pizzaloss);
-                instance_create(x, y, obj_pizzaloss);
-                instance_create(x, y, obj_pizzaloss);
-                instance_create(x, y, obj_pizzaloss);
-                instance_create(x, y, obj_pizzaloss);
-                instance_create(x, y, obj_pizzaloss);
-                instance_create(x, y, obj_pizzaloss);
-                instance_create(x, y, obj_pizzaloss);
-                instance_create(x, y, obj_pizzaloss);
+				repeat 10
+					instance_create(x, y, obj_pizzaloss);
             }
         }
         else if (character == "P")
         {
-            with (instance_create(x, y, obj_sausageman_dead))
+            with (instance_create(x, y, obj_baddie_dead))
                 sprite_index = spr_shotgunback;
             
             if (backupweapon == 1)
@@ -86,7 +71,7 @@ with (other.id)
             {
                 global.collect = 0;
                 
-                repeat (10)
+                repeat 10
                     instance_create(x, y, obj_pizzaloss);
             }
         }

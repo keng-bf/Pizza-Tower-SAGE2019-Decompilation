@@ -11,7 +11,6 @@ function scr_player_freefallland()
 	machhitAnim = 0;
 	movespeed = 0;
 	facehurt = 1;
-	start_running = 1;
 	alarm[4] = 14;
 	vsp = 0;
 	hsp = 0;

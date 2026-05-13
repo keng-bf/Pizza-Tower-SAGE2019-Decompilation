@@ -19,7 +19,6 @@ function scr_player_ejected()
 	y += floor(vsp);
 	hurted = 0;
 	cutscene = 1;
-	inv_frames = 0;
 	alarm[8] = -1;
 	alarm[7] = -1;
 }

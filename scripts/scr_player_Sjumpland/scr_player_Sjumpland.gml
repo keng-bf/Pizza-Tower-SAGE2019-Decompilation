@@ -11,7 +11,6 @@ function scr_player_Sjumpland()
 	crouchAnim = 0;
 	machhitAnim = 0;
 	movespeed = 0;
-	start_running = 1;
 	alarm[4] = 14;
 	vsp = 0;
 	hsp = 0;

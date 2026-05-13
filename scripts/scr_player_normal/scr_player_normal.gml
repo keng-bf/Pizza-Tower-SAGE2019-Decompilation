@@ -59,7 +59,6 @@ function scr_player_normal()
 	                {
 	                    if (windingAnim < 1800 || angry == 1 || global.playerhealth == 1)
 	                    {
-	                        start_running = 1;
 	                        movespeed = 0;
 	                        
 	                        if (global.minutes == 0 && global.seconds == 0)

@@ -18,7 +18,7 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == 0)
     
     instance_destroy();
     
-    with (instance_create(x, y, obj_sausageman_dead))
+    with (instance_create(x, y, obj_baddie_dead))
         sprite_index = spr_hungrypillar_dead;
     
     scr_soundeffect(sfx_killenemy);

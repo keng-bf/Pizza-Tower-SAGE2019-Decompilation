@@ -1,4 +1,4 @@
-if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
+if (ds_list_find_index(global.baddieroom, id) == -1)
 {
     var i = random_range(0, 100);
     
@@ -20,7 +20,7 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
         shake_mag_acc = 3 / room_speed;
     }
     
-    with (instance_create(x, y, obj_sausageman_dead))
+    with (instance_create(x, y, obj_baddie_dead))
         sprite_index = other.spr_dead;
     
     ds_list_add(global.baddieroom, id);
@@ -63,23 +63,4 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == 0)
     }
     
     global.combotime = 60;
-}
-else if (ds_list_find_index(global.baddieroom, id) == -1 && important == 1)
-{
-    scr_sleep(50);
-    instance_create(x, y, obj_slapstar);
-    instance_create(x, y, obj_slapstar);
-    instance_create(x, y, obj_slapstar);
-    instance_create(x, y, obj_baddiegibs);
-    instance_create(x, y, obj_baddiegibs);
-    instance_create(x, y, obj_baddiegibs);
-    
-    with (obj_camera)
-    {
-        shake_mag = 3;
-        shake_mag_acc = 3 / room_speed;
-    }
-    
-    with (instance_create(x, y, obj_sausageman_dead))
-        sprite_index = other.spr_dead;
 }

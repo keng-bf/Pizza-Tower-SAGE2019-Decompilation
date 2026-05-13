@@ -60,7 +60,6 @@ function scr_playerreset()
 	    steppy = 0;
 	    movespeedmax = 5;
 	    jumpstop = 0;
-	    start_running = 1;
 	    obj_camera.ded = 0;
 	    visible = true;
 	    global.panic = 0;
@@ -75,7 +74,6 @@ function scr_playerreset()
 	    crouchAnim = 1;
 	    machhitAnim = 0;
 	    stompAnim = 0;
-	    inv_frames = 0;
 	    turning = 0;
 	    hurtbounce = 0;
 	    hurted = 0;
@@ -99,7 +97,6 @@ function scr_playerreset()
 	    global.combotime = 0;
 	    global.pizzacoin = 0;
 	    global.toppintotal = 1;
-	    global.hit = 0;
 	    ini_open("saveData.ini");
 	    global.SAGEshotgunsnick = ini_read_string("SAGE2019", "shotgunsnick", 0);
 	    global.SAGEshotgunsnicknumber = 0;
@@ -113,9 +110,6 @@ function scr_playerreset()
 	    global.SAGEtoppin = ini_read_string("SAGE2019", "toppin", 0);
 	    global.SAGEtreasure = ini_read_string("SAGE2019", "treasure", 0);
 	    ini_close();
-	    in_water = 0;
-	    key_particles = 0;
-	    barrel = 0;
 	    bounce = 0;
 	    a = 0;
 	    idle = 0;
@@ -125,31 +119,25 @@ function scr_playerreset()
 	    machpunchAnim = 0;
 	    punch = 0;
 	    machfreefall = 0;
-	    shoot = 1;
 	    instakillmove = 0;
 	    windingAnim = 0;
 	    facestompAnim = 0;
 	    ladderbuffer = 0;
-	    chainsaw = 50;
 	    toomuchalarm1 = 0;
 	    toomuchalarm2 = 0;
 	    dashdust = 0;
 	    throwforce = 0;
-	    hurtsound = sfx_jump;
 	    idleanim = 0;
 	    momemtum = 0;
 	    cutscene = 0;
 	    grabbing = 0;
 	    dir = xscale;
-	    goingdownslope = 0;
-	    goingupslope = 0;
 	    fallinganimation = 0;
 	    bombpeptimer = 100;
 	    slapbuffer = 0;
 	    slaphand = 1;
 	    suplexmove = 0;
 	    suplexhavetomash = 0;
-	    timeuntilhpback = 300;
 	    anger = 0;
 	    angry = 0;
 	}

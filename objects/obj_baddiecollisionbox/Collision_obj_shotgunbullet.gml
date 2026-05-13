@@ -8,7 +8,6 @@ else if (instance_exists(baddieID))
     baddieID.hp -= 1;
     scr_soundeffect(sfx_hitenemy);
     scr_soundeffect(sfx_machpunch);
-    global.hit += 1;
     global.combotime = 60;
     instance_create(baddieID.x, baddieID.y, obj_slapstar);
     instance_create(baddieID.x, baddieID.y, obj_baddiegibs);

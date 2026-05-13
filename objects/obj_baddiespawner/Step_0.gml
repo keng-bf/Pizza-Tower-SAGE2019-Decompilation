@@ -11,7 +11,6 @@ if (refresh <= 0)
         {
             vsp = -5;
             other.baddieid = id;
-            important = 1;
         }
         
         refresh = 100;
