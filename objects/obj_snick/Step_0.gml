@@ -1,8 +1,8 @@
 if (obj_player.character == "S")
     instance_destroy();
 
-if (x != obj_player1.x)
-    image_xscale = -sign(x - obj_player1.x);
+if (x != obj_player.x)
+    image_xscale = -sign(x - obj_player.x);
 
 if (global.medievalrank != "none" && global.ruinrank != "none" && global.dungeonrank != "none" && global.snickchallengerank == "none")
     sprite_index = spr_snick_exe;

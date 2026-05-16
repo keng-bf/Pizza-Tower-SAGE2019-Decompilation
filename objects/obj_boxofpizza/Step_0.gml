@@ -6,12 +6,12 @@ with (obj_player)
         {
             other.depth = -10;
             scr_soundeffect(sfx_box);
-            obj_player1.box = 1;
+            obj_player.box = 1;
             mach2 = 0;
             obj_camera.chargecamera = 0;
             x = other.x;
-            obj_player1.targetDoor = other.targetDoor;
-            obj_player1.targetRoom = other.targetRoom;
+            obj_player.targetDoor = other.targetDoor;
+            obj_player.targetRoom = other.targetRoom;
             sprite_index = spr_downpizzabox;
             image_index = 0;
             state = 77;
@@ -24,13 +24,13 @@ with (obj_player)
         {
             scr_soundeffect(sfx_box);
             other.depth = -10;
-            obj_player1.box = 1;
+            obj_player.box = 1;
             other.depth = -8;
             mach2 = 0;
             obj_camera.chargecamera = 0;
             x = other.x;
-            obj_player1.targetDoor = other.targetDoor;
-            obj_player1.targetRoom = other.targetRoom;
+            obj_player.targetDoor = other.targetDoor;
+            obj_player.targetRoom = other.targetRoom;
             sprite_index = spr_uppizzabox;
             image_index = 0;
             state = 77;

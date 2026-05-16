@@ -41,7 +41,7 @@ if (pause == 1)
                 room = medieval_1;
                 scr_playerreset();
                 pause = 0;
-                obj_player1.targetDoor = "A";
+                obj_player.targetDoor = "A";
             }
             else if (string_letters(roomname) == "ruin" || string_letters(roomname) == "ruinsecret")
             {
@@ -49,7 +49,7 @@ if (pause == 1)
                 room = ruin_1;
                 scr_playerreset();
                 pause = 0;
-                obj_player1.targetDoor = "A";
+                obj_player.targetDoor = "A";
             }
             else if (string_letters(roomname) == "dungeon" || string_letters(roomname) == "dungeonsecret")
             {
@@ -57,7 +57,7 @@ if (pause == 1)
                 room = dungeon_1;
                 scr_playerreset();
                 pause = 0;
-                obj_player1.targetDoor = "A";
+                obj_player.targetDoor = "A";
             }
             else
             {
@@ -78,7 +78,7 @@ if (pause == 1)
             if (global.panicbg)
                 scr_panicbg_init();
             
-            obj_player1.targetDoor = "A";
+            obj_player.targetDoor = "A";
             global.snickchallenge = 1;
             pause = 0;
         }
@@ -92,7 +92,7 @@ if (pause == 1)
             instance_activate_all();
             room = Realtitlescreen;
             
-            with (obj_player1)
+            with (obj_player)
             {
                 character = "P";
                 scr_characterspr();
@@ -101,7 +101,7 @@ if (pause == 1)
             scr_playerreset();
             obj_player.state = 7;
             global.cowboyhat = 0;
-            obj_player1.targetDoor = "A";
+            obj_player.targetDoor = "A";
         }
         else
         {

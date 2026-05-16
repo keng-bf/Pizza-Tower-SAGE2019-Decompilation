@@ -1,4 +1,4 @@
-with (obj_player1)
+with (obj_player)
 {
     if (key_up && grounded && (state == 0 || state == 68 || state == 69 || state == 89) && !instance_exists(obj_fadeout) && state != 63 && state != 60)
     {
@@ -13,9 +13,9 @@ with (obj_player1)
     }
 }
 
-if (floor(obj_player1.image_index) == (obj_player1.image_number - 1) && obj_player1.state == 63)
+if (floor(obj_player.image_index) == (obj_player.image_number - 1) && obj_player.state == 63)
 {
-    with (obj_player1)
+    with (obj_player)
     {
         if (other.level == "snickchallenge")
         {

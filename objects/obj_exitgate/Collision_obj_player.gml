@@ -242,8 +242,8 @@ with (obj_player)
         if (!instance_exists(obj_endlevelfade))
             instance_create(x, y, obj_endlevelfade);
         
-        obj_player1.state = 77;
-        obj_player1.sprite_index = spr_player_lookdoor;
+        obj_player.state = 77;
+        obj_player.sprite_index = spr_player_lookdoor;
         obj_endlevelfade.alarm[0] = 235;
         image_index = 0;
         global.panic = 0;

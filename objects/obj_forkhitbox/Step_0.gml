@@ -21,7 +21,7 @@ if (instance_exists(ID))
         
         if (object_index == obj_snickexe)
         {
-            if (obj_player1.instakillmove == 1 || obj_player1.state == 21)
+            if (obj_player.instakillmove == 1 || obj_player.state == 21)
             {
                 instance_destroy(other.id);
                 hitboxcreate = 0;

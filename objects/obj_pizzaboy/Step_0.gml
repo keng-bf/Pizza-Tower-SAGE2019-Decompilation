@@ -12,10 +12,6 @@ switch (state)
         scr_enemy_walk();
         break;
     
-    case 102:
-        scr_enemy_land();
-        break;
-    
     case 103:
         scr_enemy_hit();
         break;

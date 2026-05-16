@@ -29,6 +29,3 @@ if (global.shroomfollow == 1 && sprite_index != spr_toppinshroom_intro)
     
     image_xscale = obj_player.xscale;
 }
-
-if (global.playerhealth == 1 && global.shroomfollow == 1)
-    sprite_index = spr_pizzakinshroom_panic;

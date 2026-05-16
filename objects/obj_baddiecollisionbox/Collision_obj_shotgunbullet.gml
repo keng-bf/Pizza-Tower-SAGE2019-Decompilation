@@ -20,5 +20,5 @@ else if (instance_exists(baddieID))
     instance_create(x, y, obj_bumpeffect);
     instance_create(baddieID.x, baddieID.y, obj_bangeffect);
     baddieID.vsp = -4;
-    baddieID.hsp = obj_player1.xscale * 5;
+    baddieID.hsp = obj_player.xscale * 5;
 }

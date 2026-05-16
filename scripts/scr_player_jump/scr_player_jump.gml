@@ -124,9 +124,6 @@ function scr_player_jump()
 	        if (sprite_index == spr_jump)
 	            sprite_index = spr_fall;
 	        
-	        if (sprite_index == spr_player_Sjumpstart)
-	            sprite_index = spr_player_Sjump;
-	        
 	        if (sprite_index == spr_player_shotgunjump1)
 	            sprite_index = spr_player_shotgunjump2;
 	    }

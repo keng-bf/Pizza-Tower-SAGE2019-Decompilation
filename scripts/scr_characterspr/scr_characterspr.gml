@@ -1,7 +1,7 @@
 function scr_characterspr()
 {
-	if (character == "P")
-	{
+	switch character
+	{default:
 	    spr_idle = spr_player_idle;
 	    spr_move = spr_player_move;
 	    spr_crawl = spr_player_crawl;
@@ -9,7 +9,6 @@ function scr_characterspr()
 	    spr_hurt = spr_player_hurt;
 	    spr_jump = spr_player_jump;
 	    spr_fall = spr_player_fall;
-	    spr_fall2 = spr_player_fall2;
 	    spr_crouch = spr_player_crouch;
 	    spr_crouchjump = spr_player_crouchjump;
 	    spr_crouchfall = spr_player_crouchfall;
@@ -37,7 +36,6 @@ function scr_characterspr()
 	    spr_punch = spr_player_punch;
 	    spr_backkick = spr_player_backkick;
 	    spr_shoulder = spr_player_shoulder;
-	    spr_uppunch = spr_player_uppunch;
 	    spr_stomp = spr_player_stomp;
 	    spr_stompprep = spr_player_stompprep;
 	    spr_crouchslide = spr_player_crouchslide;
@@ -113,16 +111,13 @@ function scr_characterspr()
 	    spr_tumblestart = spr_player_tumblestart;
 	    spr_tumbleend = spr_player_tumbleend;
 	    spr_tumble = spr_player_tumble;
-	    spr_stunned = spr_player_stunned;
 	    spr_downpizzabox = spr_player_downpizzabox;
 	    spr_uppizzabox = spr_player_uppizzabox;
 	    spr_taunt = spr_player_taunt;
 	    spr_slipnslide = spr_player_slipnslide;
 	    spr_palette = spr_peppalette;
-	}
-	
-	if (character == "S")
-	{
+	break
+	case "S":
 	    spr_idle = spr_snick_idle;
 	    spr_move = spr_snick_walk;
 	    spr_crawl = spr_snick_idle;
@@ -130,7 +125,6 @@ function scr_characterspr()
 	    spr_hurt = spr_snick_hurt;
 	    spr_jump = spr_snick_bodyslamstart;
 	    spr_fall = spr_snick_fall;
-	    spr_fall2 = spr_snick_fall;
 	    spr_crouch = spr_snick_idle;
 	    spr_crouchjump = spr_snick_fall;
 	    spr_crouchfall = spr_snick_fall;
@@ -158,7 +152,6 @@ function scr_characterspr()
 	    spr_punch = spr_snick_idle;
 	    spr_backkick = spr_snick_idle;
 	    spr_shoulder = spr_snick_idle;
-	    spr_uppunch = spr_snick_idle;
 	    spr_stomp = spr_snick_fall;
 	    spr_stompprep = spr_snick_bodyslamstart;
 	    spr_crouchslide = spr_snick_slide;
@@ -234,11 +227,11 @@ function scr_characterspr()
 	    spr_tumblestart = spr_snick_slide;
 	    spr_tumbleend = spr_snick_bump;
 	    spr_tumble = spr_snick_tumble;
-	    spr_stunned = spr_snick_stunned;
 	    spr_downpizzabox = spr_snick_downbox;
 	    spr_uppizzabox = spr_snick_upbox;
 	    spr_taunt = spr_snick_taunt;
 	    spr_slipnslide = spr_snick_hurt;
 	    spr_palette = spr_peppalette;
+	break
 	}
 }

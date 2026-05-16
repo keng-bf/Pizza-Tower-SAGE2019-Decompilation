@@ -34,7 +34,7 @@ function scr_playerreset()
 	ds_list_clear(global.saveroom);
 	ds_list_clear(global.baddieroom);
 	
-	with (obj_player1)
+	with (obj_player)
 	{
 	    alarm[0] = -1;
 	    alarm[1] = -1;
@@ -49,7 +49,6 @@ function scr_playerreset()
 	    grav = 0.5;
 	    hsp = 0;
 	    vsp = 0;
-	    global.playerhealth = 5;
 	    xscale = 1;
 	    yscale = 1;
 	    x = backtohubstartx;
@@ -130,7 +129,6 @@ function scr_playerreset()
 	    idleanim = 0;
 	    momemtum = 0;
 	    cutscene = 0;
-	    grabbing = 0;
 	    dir = xscale;
 	    fallinganimation = 0;
 	    bombpeptimer = 100;

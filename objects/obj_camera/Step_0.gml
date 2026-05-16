@@ -2,6 +2,15 @@ if (room == rank_room || room == timesuproom || room == Realtitlescreen)
     visible = false;
 else
     visible = true;
+	
+if (global.panic && start == 0)
+{
+    alarm[0] = 5;
+    start = 1;
+}
+
+if (global.panic == 0)
+    alarm[0] = -1;
 
 if (global.combo >= 10)
 {
@@ -10,9 +19,6 @@ if (global.combo >= 10)
     ini_write_string("SAGE2019", "combo10", 1);
     ini_close();
 }
-
-if (room == timesuproom)
-    timestop = 1;
 
 if (global.seconds <= 0 && global.minutes <= 0 && ded == 0)
 {
@@ -34,7 +40,7 @@ if (global.seconds > 59)
     global.seconds -= 59;
 }
 
-if ((global.panic && global.minutes < 1) || obj_player1.sprite_index == spr_player_timesup)
+if ((global.panic && global.minutes < 1) || obj_player.sprite_index == spr_player_timesup)
 {
     shake_mag = 2;
     shake_mag_acc = 3 / room_speed;
@@ -53,16 +59,16 @@ if (shake_mag > 0)
         shake_mag = 0;
 }
 
-if (instance_exists(obj_player1) && obj_player1.state != 35 && obj_player1.state != 54)
+if (instance_exists(obj_player) && obj_player.state != 35 && obj_player.state != 54)
 {
-    var target = obj_player1;
+    var target = obj_player;
     
-    if (obj_player1.state == 89 || obj_player1.state == 36)
+    if (obj_player.state == 89 || obj_player.state == 36)
     {
-        if (chargecamera > (obj_player1.xscale * 100))
+        if (chargecamera > (obj_player.xscale * 100))
             chargecamera -= 2;
         
-        if (chargecamera < (obj_player1.xscale * 100))
+        if (chargecamera < (obj_player.xscale * 100))
             chargecamera += 2;
         
         __view_set(0, 0, (target.x - (__view_get(2, 0) / 2)) + chargecamera);

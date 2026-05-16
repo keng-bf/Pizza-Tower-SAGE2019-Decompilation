@@ -54,6 +54,3 @@ if (global.pineapplefollow == 1 && sprite_index != spr_toppinpineapple_intro)
     
     image_xscale = obj_player.xscale;
 }
-
-if (global.playerhealth == 1 && global.pineapplefollow == 1)
-    sprite_index = spr_pizzakinpineapple_panic;

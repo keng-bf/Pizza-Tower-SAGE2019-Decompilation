@@ -1,5 +1,5 @@
-x = median(x - maxspeed, obj_player1.x, x + maxspeed);
-y = median(y - maxspeed, obj_player1.y, y + maxspeed);
+x = median(x - maxspeed, obj_player.x, x + maxspeed);
+y = median(y - maxspeed, obj_player.y, y + maxspeed);
 
 if (x != obj_player.x)
     image_xscale = -sign(x - obj_player.x);
@@ -7,7 +7,7 @@ if (x != obj_player.x)
 if (global.snickchallenge == 0)
     instance_destroy();
 
-if (hitboxcreate == 0 && (obj_player1.instakillmove == 0 && obj_player1.state != 21))
+if (hitboxcreate == 0 && (obj_player.instakillmove == 0 && obj_player.state != 21))
 {
     hitboxcreate = 1;
     
@@ -18,7 +18,7 @@ if (hitboxcreate == 0 && (obj_player1.instakillmove == 0 && obj_player1.state !=
     }
 }
 
-if (place_meeting(x, y, obj_player1) && (obj_player1.instakillmove == 1 || obj_player1.state == 21))
+if (place_meeting(x, y, obj_player) && (obj_player.instakillmove == 1 || obj_player.state == 21))
 {
     repeat (6)
     {

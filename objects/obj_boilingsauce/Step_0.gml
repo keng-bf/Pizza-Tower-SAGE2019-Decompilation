@@ -1,4 +1,4 @@
-if (place_meeting(x, y - 1, obj_player) && obj_player1.state != 54)
+if (place_meeting(x, y - 1, obj_player) && obj_player.state != 54)
 {
     obj_player.state = 5;
     obj_player.image_index = 0;

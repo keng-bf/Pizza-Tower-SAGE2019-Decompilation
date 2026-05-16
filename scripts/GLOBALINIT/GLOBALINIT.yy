@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "PizzaTower_GM2",
+    "path": "PizzaTower_GM2.yyp",
   },
 }

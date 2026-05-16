@@ -39,6 +39,3 @@ if (global.cheesefollow == 1 && sprite_index != spr_toppincheese_intro)
     
     image_xscale = obj_player.xscale;
 }
-
-if (global.playerhealth == 1 && global.cheesefollow == 1)
-    sprite_index = spr_pizzakincheese_panic;

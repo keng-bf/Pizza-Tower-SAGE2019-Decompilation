@@ -101,7 +101,7 @@ function scr_player_mach3()
 	    image_index = 0;
 	}
 	
-	if (key_down && !place_meeting(x, y, obj_dashpad))
+	if key_down
 	{
 	    instance_create(x, y, obj_jumpdust);
 	    flash = 0;

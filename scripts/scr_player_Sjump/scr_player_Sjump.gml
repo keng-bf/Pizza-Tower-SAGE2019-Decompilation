@@ -14,21 +14,9 @@ function scr_player_Sjump()
 	if (sprite_index == spr_superjump)
 	    vsp = -15;
 	
-	if (sprite_index == spr_player_supersidejump)
-	{
-	    if (a < 25)
-	        a++;
-	    
-	    hsp = xscale * a;
-	    vsp = 0;
-	}
-	
 	if (scr_solid(x, y - 1) && !place_meeting(x, y - 1, obj_destructibles))
 	{
 	    a = 0;
-	    
-	    if (sprite_index == spr_player_supersidejump)
-	        sprite_index = spr_player_supersidejumpland;
 	    
 	    if (sprite_index == spr_superjump)
 	        sprite_index = spr_superjumpland;
@@ -56,7 +44,7 @@ function scr_player_Sjump()
 	    machhitAnim = 0;
 	}
 	
-	if (key_attack2)
+	if key_attack2
 	{
 	    movespeed = 12;
 	    machhitAnim = 0;

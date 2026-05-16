@@ -49,6 +49,3 @@ if (global.sausagefollow == 1 && sprite_index != spr_toppinsausage_intro)
     
     image_xscale = obj_player.xscale;
 }
-
-if (global.playerhealth == 1 && global.sausagefollow == 1)
-    sprite_index = spr_pizzakinsausage_panic;

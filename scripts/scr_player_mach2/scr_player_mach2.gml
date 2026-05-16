@@ -30,9 +30,9 @@ function scr_player_mach2()
 	
 	if (grounded && vsp > 0)
 	{
-	    if (machpunchAnim == 0 && sprite_index != spr_mach && sprite_index != spr_player_machhit)
+	    if (machpunchAnim == 0 && sprite_index != spr_mach)
 	    {
-	        if (sprite_index != spr_player_machhit && sprite_index != spr_player_rollgetup)
+	        if (sprite_index != spr_player_rollgetup)
 	            sprite_index = spr_mach;
 	    }
 	    
@@ -83,7 +83,7 @@ function scr_player_mach2()
 	if (key_jump)
 	    input_buffer_jump = 0;
 	
-	if (key_down && !place_meeting(x, y, obj_dashpad))
+	if key_down
 	{
 	    instance_create(x, y, obj_jumpdust);
 	    flash = 0;

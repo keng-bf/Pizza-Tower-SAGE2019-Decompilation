@@ -44,6 +44,3 @@ if (global.tomatofollow == 1 && sprite_index != spr_toppintomato_intro)
     
     image_xscale = obj_player.xscale;
 }
-
-if (global.playerhealth == 1 && global.tomatofollow == 1)
-    sprite_index = spr_pizzakintomato_panic;

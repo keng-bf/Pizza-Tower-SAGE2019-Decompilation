@@ -87,22 +87,6 @@ function scr_player_machfreefall()
 	if (!audio_is_playing(sfx_mach2))
 	    audio_play_sound(sfx_mach2, 1, false);
 	
-	if (grounded && input_buffer_jump < 8 && vsp > 0)
-	{
-	    sprite_index = spr_player_hanstandjump;
-	    stompAnim = 0;
-	    hsp = 0;
-	    state = 21;
-	    jumpAnim = 1;
-	    jumpstop = 0;
-	    image_index = 0;
-	    
-	    if (!place_meeting(x, y, obj_water2))
-	        instance_create(x, y, obj_landcloud);
-	    
-	    freefallstart = 0;
-	}
-	
 	if (key_jump)
 	    input_buffer_jump = 0;
 	

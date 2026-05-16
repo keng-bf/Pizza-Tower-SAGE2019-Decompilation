@@ -16,10 +16,6 @@ switch (state)
         scr_enemy_walk();
         break;
     
-    case 102:
-        scr_enemy_land();
-        break;
-    
     case 103:
         scr_enemy_hit();
         break;
@@ -67,7 +63,7 @@ if (state != 107)
 
 if ((obj_player.x > (x - 400) && obj_player.x < (x + 400)) && (y <= (obj_player.y + 60) && y >= (obj_player.y - 60)))
 {
-    if (state != 92 && obj_player1.state == 89)
+    if (state != 92 && obj_player.state == 89)
     {
         state = 92;
         sprite_index = scaredspr;
@@ -91,9 +87,9 @@ if (sprite_index == spr_ancho_chargestart && floor(image_index) == (image_number
     movespeed = 10;
 }
 
-if (x != obj_player1.x && state != 94 && y == ystart)
+if (x != obj_player.x && state != 94 && y == ystart)
 {
-    if ((obj_player1.x > (x - 200) && obj_player1.x < (x + 200)) && (y <= (obj_player1.y + 50) && y >= (obj_player1.y - 50)))
+    if ((obj_player.x > (x - 200) && obj_player.x < (x + 200)) && (y <= (obj_player.y + 50) && y >= (obj_player.y - 50)))
     {
         if (state == 100)
         {

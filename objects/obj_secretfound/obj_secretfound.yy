@@ -27,10 +27,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_pizzakinsausage_underwater",
-    "path": "sprites/spr_pizzakinsausage_underwater/spr_pizzakinsausage_underwater.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": false,
 }

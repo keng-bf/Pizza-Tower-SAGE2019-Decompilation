@@ -1,4 +1,4 @@
-with (obj_player1)
+with (obj_player)
 {
     if ((place_meeting(x + hsp, y, other.id) || place_meeting(x + xscale, y, other.id)) && (obj_player.state == 89 || obj_player.state == 17))
         instance_destroy(other.id);

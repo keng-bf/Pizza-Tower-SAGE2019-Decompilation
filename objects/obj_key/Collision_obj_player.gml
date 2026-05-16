@@ -1,4 +1,4 @@
-with (obj_player1)
+with (obj_player)
 {
     if (other.inv_frame == 0 && state != 26 && state != 23 && state != 10 && state != 14 && state != 12 && state != 24 && state != 17 && state != 72)
     {

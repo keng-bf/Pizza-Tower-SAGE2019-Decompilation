@@ -1,6 +1,6 @@
 if (place_meeting(x, y + 1, obj_player) && activated == 0)
 {
-    with (obj_player1)
+    with (obj_player)
     {
         if (character == "P" && other.activated == 0)
         {

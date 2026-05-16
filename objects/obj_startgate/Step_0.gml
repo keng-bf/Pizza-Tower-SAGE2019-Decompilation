@@ -1,6 +1,6 @@
 targetDoor = "A";
 
-if (place_meeting(x, y, obj_player1))
+if (place_meeting(x, y, obj_player))
 {
     image_speed = 0.35;
 }

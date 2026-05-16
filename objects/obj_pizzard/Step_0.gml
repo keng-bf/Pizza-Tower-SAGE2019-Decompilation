@@ -16,10 +16,6 @@ switch (state)
         scr_enemy_walk();
         break;
     
-    case 102:
-        scr_enemy_land();
-        break;
-    
     case 103:
         scr_enemy_hit();
         break;
@@ -59,7 +55,7 @@ if (state != 104)
 
 if ((obj_player.x > (x - 400) && obj_player.x < (x + 400)) && (y <= (obj_player.y + 60) && y >= (obj_player.y - 60)))
 {
-    if (state != 92 && obj_player1.state == 89)
+    if (state != 92 && obj_player.state == 89)
     {
         state = 92;
         sprite_index = scaredspr;

@@ -19,4 +19,5 @@ zoomw = 960;
 global.panicbg = 1;
 global.maxwave = 0;
 global.wave = 0;
+start = 0;
 ded = 0;

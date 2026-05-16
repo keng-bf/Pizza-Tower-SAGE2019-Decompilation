@@ -8,11 +8,11 @@ if (instance_exists(baddieID))
     image_xscale = baddieID.image_xscale;
 }
 
-if (instance_exists(baddieID) && place_meeting(x, y, obj_player1) && obj_player1.cutscene == 0 && obj_player1.state != 6)
+if (instance_exists(baddieID) && place_meeting(x, y, obj_player) && obj_player.cutscene == 0 && obj_player.state != 6)
 {
     if (baddieID.state != 107)
     {
-        with (obj_player1)
+        with (obj_player)
         {
             if (instakillmove == 1)
             {

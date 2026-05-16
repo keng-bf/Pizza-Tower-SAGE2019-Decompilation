@@ -57,7 +57,7 @@ function scr_player_normal()
 	            {
 	                if (facehurt == 0)
 	                {
-	                    if (windingAnim < 1800 || angry == 1 || global.playerhealth == 1)
+	                    if (windingAnim < 1800 || angry)
 	                    {
 	                        movespeed = 0;
 	                        
