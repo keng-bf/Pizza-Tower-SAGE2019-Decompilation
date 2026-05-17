@@ -25,7 +25,7 @@ if (optionselected == 0)
     {
         window_set_fullscreen(true);
         ini_open("saveData.ini");
-        global.option_fullscreen = ini_write_real("Option", "fullscreen", 0);
+        ini_write_real("Option", "fullscreen", 0);
         ini_close();
     }
     
@@ -33,7 +33,7 @@ if (optionselected == 0)
     {
         window_set_fullscreen(false);
         ini_open("saveData.ini");
-        global.option_fullscreen = ini_write_real("Option", "fullscreen", 1);
+        ini_write_real("Option", "fullscreen", 1);
         ini_close();
     }
 }
@@ -49,7 +49,7 @@ if (optionselected == 1)
     if (obj_player.key_jump && optionsaved_resolution == 0)
     {
         ini_open("saveData.ini");
-        global.option_resolution = ini_write_real("Option", "resolution", 0);
+        ini_write_real("Option", "resolution", 0);
         ini_close();
         window_set_size(480, 270);
     }
@@ -58,7 +58,7 @@ if (optionselected == 1)
     {
         window_set_size(960, 540);
         ini_open("saveData.ini");
-        global.option_resolution = ini_write_real("Option", "resolution", 1);
+        ini_write_real("Option", "resolution", 1);
         ini_close();
     }
     
@@ -66,7 +66,7 @@ if (optionselected == 1)
     {
         window_set_size(1980, 1080);
         ini_open("saveData.ini");
-        global.option_resolution = ini_write_real("Option", "resolution", 2);
+        ini_write_real("Option", "resolution", 2);
         ini_close();
     }
 }

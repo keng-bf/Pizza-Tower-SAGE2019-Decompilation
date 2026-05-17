@@ -16,7 +16,7 @@ if (reset < 0 && !place_meeting(x, y, obj_player))
     visible = true;
     image_speed = 0.35;
     falling = 0;
-    mask_index = spr_railh2;
+    mask_index = spr_wall;
     sprite_index = spr_cheeseblockreform;
 }
 
