@@ -63,36 +63,18 @@ if obj_player.state != 54
     else if (obj_player.movespeed >= 12 && (obj_player.state == 68 || obj_player.state == 69 || obj_player.state == 89 || obj_player.state == 16 || obj_player.state == 70 || obj_player.state == 36 || obj_player.state == 21))
         draw_sprite_ext(spr_speedbarmax, -1, 125, 140, 1, 1, 1, c_white, alpha);
     
-    if obj_player.y < 200 && obj_player.x < 200
-        alpha = 0.5;
-    else
-        alpha = 1;
-    
-    font = font_add_sprite_ext(spr_font, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.1234567890:", 1, 0);
-    draw_set_font(font);
+	alpha = (obj_player.y < 200 && obj_player.x < 200) ? 0.5 : 1
+	draw_set_font(global.bigfont);
     draw_set_halign(fa_center);
     draw_set_color(c_white);
     
     if global.panic || global.snickchallenge
     {
+		draw_set_color((global.minutes < 1) ? c_red : c_white);
         if global.seconds < 10
-        {
-            if global.minutes < 1
-                draw_set_color(c_red);
-            else
-                draw_set_color(c_white);
-            
             draw_text(random_range(1, -1) + 480, random_range(1, -1) + 65, string_hash_to_newline(string(global.minutes) + ":0" + string(global.seconds)));
-        }
         else if global.seconds >= 10
-        {
-            if global.minutes < 1
-                draw_set_color(c_red);
-            else
-                draw_set_color(c_white);
-            
             draw_text(random_range(1, -1) + 480, random_range(1, -1) + 65, string_hash_to_newline(string(global.minutes) + ":" + string(global.seconds)));
-        }
     }
     
     if global.key_inv

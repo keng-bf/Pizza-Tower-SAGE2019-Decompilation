@@ -1,3 +1,6 @@
+global.bigfont = font_add_sprite_ext(spr_font, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.1234567890:", 1, 0);
+global.smallnumber = font_add_sprite_ext(spr_smallnumber, "1234567890", 1, 0);
+
 #macro auto_targetdoor if (place_meeting(x, y, obj_doorA))\
 							targetDoor = "A"\
 						if (place_meeting(x, y, obj_doorB))\
