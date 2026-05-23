@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "tileset_medieval3_sprite",
+  "name": "tile_dungeon",
   "bbox_bottom": 503,
   "bbox_left": 0,
   "bbox_right": 467,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f5822633-88f5-43ec-bc19-f957eea93fcb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cb0b4f17-f55d-44cd-a175-da8699b971cb",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 504,
+  "height": 544,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0d068d1c-472c-45bc-a2bb-20225b57190d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4984a04a-2022-40cd-9ac8-a2c77a6a53ca","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "tileset_medieval3_sprite",
+    "name": "tile_dungeon",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f5822633-88f5-43ec-bc19-f957eea93fcb","path":"sprites/tileset_medieval3_sprite/tileset_medieval3_sprite.yy",},},},"Disabled":false,"id":"9ab2b120-70cf-4b47-a24a-74a2ae800c81","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"cb0b4f17-f55d-44cd-a175-da8699b971cb","path":"sprites/tile_dungeon/tile_dungeon.yy",},},},"Disabled":false,"id":"f483b971-26ec-4710-862d-a8b94091f6c2","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 468,
+  "width": 320,
 }

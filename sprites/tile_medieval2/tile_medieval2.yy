@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "tileset_dungeon_sprite",
+  "name": "tile_medieval2",
   "bbox_bottom": 503,
   "bbox_left": 0,
   "bbox_right": 467,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5d8cca52-9457-4df5-9d97-b31dfa76d0f1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"db09fba3-236c-4eaf-a386-2460d8993b23",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 504,
+  "height": 480,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b033b46d-7ae0-4c4f-ab6b-a15e91766c3c","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d9b1e96e-de83-48d7-ba22-e4e3431ff141","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "tileset_dungeon_sprite",
+    "name": "tile_medieval2",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5d8cca52-9457-4df5-9d97-b31dfa76d0f1","path":"sprites/tileset_dungeon_sprite/tileset_dungeon_sprite.yy",},},},"Disabled":false,"id":"c8a725b8-d6d9-4e28-8090-37405fb064d8","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"db09fba3-236c-4eaf-a386-2460d8993b23","path":"sprites/tile_medieval2/tile_medieval2.yy",},},},"Disabled":false,"id":"0bfc09f7-f035-44f0-8f14-7e5d8f54fbf8","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 468,
+  "width": 320,
 }
