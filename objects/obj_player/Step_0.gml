@@ -94,10 +94,6 @@ switch (state)
         scr_player_skateboard();
         break;
     
-    case 44:
-        scr_player_grind();
-        break;
-    
     case 45:
         scr_player_grab();
         break;
@@ -255,9 +251,6 @@ if (!instance_exists(baddiegrabbedID) && (state == 45 || state == 42 || state ==
 
 if (!(state == 45 || state == 42 || state == 69))
     baddiegrabbedID = 0;
-
-if (grinding)
-    state = 44;
 
 if (character == "P")
 {

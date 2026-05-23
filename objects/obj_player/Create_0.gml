@@ -38,7 +38,6 @@ attacking = 0;
 slamming = 0;
 superslam = 0;
 grounded = 1;
-grinding = 0;
 machpunchAnim = 0;
 punch = 0;
 machfreefall = 0;

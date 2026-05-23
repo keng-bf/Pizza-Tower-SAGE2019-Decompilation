@@ -9,15 +9,15 @@
     "TileSerialiseData": [],
   },
   "out_columns": 10,
-  "out_tilehborder": 2,
-  "out_tilevborder": 2,
+  "out_tilehborder": 0,
+  "out_tilevborder": 0,
   "parent": {
     "name": "Tile Sets",
     "path": "folders/Tile Sets.yy",
   },
   "spriteId": {
-    "name": "tile_tower_tileset_sprite",
-    "path": "sprites/tile_tower_tileset_sprite/tile_tower_tileset_sprite.yy",
+    "name": "tile_tower",
+    "path": "sprites/tile_tower/tile_tower.yy",
   },
   "spriteNoExport": true,
   "textureGroupId": {
@@ -133,9 +133,9 @@
   "tileAnimationFrames": [],
   "tileAnimationSpeed": 15.0,
   "tileHeight": 32,
-  "tilehsep": 4,
-  "tilevsep": 4,
+  "tilehsep": 0,
+  "tilevsep": 0,
   "tileWidth": 32,
-  "tilexoff": 2,
-  "tileyoff": 2,
+  "tilexoff": 0,
+  "tileyoff": 0,
 }

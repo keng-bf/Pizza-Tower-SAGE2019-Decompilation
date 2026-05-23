@@ -22,16 +22,6 @@ function scr_solid_player()
 	    }
 	}
 	
-	if (y > old_y && (bbox_bottom % 16) == 0 && !place_meeting(x, old_y, obj_grindrail) && place_meeting(x, y, obj_grindrail))
-	{
-	    if (state == 69 || state == 44)
-	    {
-	        x = old_x;
-	        y = old_y;
-	        return 1;
-	    }
-	}
-	
 	var slope = instance_place(x, y, obj_slope);
 	
 	if (slope)

@@ -1,7 +1,6 @@
 function scr_collide_player()
 {
 	grounded = 0;
-	grinding = 0;
 	
 	repeat (abs(vsp))
 	{
@@ -40,6 +39,4 @@ function scr_collide_player()
 	
 	grounded |= scr_solid(x, y + 1);
 	grounded |= (!place_meeting(x, y, obj_platform) && place_meeting(x, y + 1, obj_platform));
-	grinding = !place_meeting(x, y, obj_grindrail) && place_meeting(x, y + 1, obj_grindrail);
-	grounded |= grinding;
 }
