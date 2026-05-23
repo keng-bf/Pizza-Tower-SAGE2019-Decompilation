@@ -3,7 +3,7 @@ if (ds_list_find_index(global.baddieroom, id) == -1)
     var i = random_range(0, 100);
     
     if (i >= 95)
-        scr_soundeffect(sfx_scream1, sfx_scream2, sfx_scream3, sfx_scream4, sfx_scream5, sfx_scream6, sfx_scream7, sfx_scream8, sfx_scream9, sfx_scream10);
+        scr_soundeffect(asset_get_index("sfx_scream" + string(irandom_range(1, 10))));
     
     scr_soundeffect(sfx_killenemy);
     scr_sleep(50);

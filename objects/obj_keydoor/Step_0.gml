@@ -12,7 +12,7 @@ if ((obj_player.state == 0 || obj_player.state == 68 || obj_player.state == 69 |
 
 with (obj_player)
 {
-    if (place_meeting(x, y, obj_keydoor) && other.sprite_index == spr_doorvisited && key_up && (state == 0 || state == 68 || state == 69 || state == 89) && y == (other.y + 50) && !instance_exists(obj_fadeout) && state != 77 && state != 63 && state != 60)
+    if (place_meeting(x, y, obj_keydoor) && other.sprite_index == spr_door && key_up && (state == 0 || state == 68 || state == 69 || state == 89) && y == (other.y + 50) && !instance_exists(obj_fadeout) && state != 77 && state != 63 && state != 60)
     {
         mach2 = 0;
         image_index = 0;

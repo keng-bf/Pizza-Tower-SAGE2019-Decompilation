@@ -1,10 +1,3 @@
-ini_open("saveData.ini");
-global.medievalrank = ini_read_string("Ranks", "medieval", "none");
-global.ruinrank = ini_read_string("Ranks", "ruin", "none");
-global.dungeonrank = ini_read_string("Ranks", "dungeon", "none");
-global.snickchallengerank = ini_read_string("Ranks", "snickchallenge", "none");
-ini_close();
-
 if (levelsign == "medieval")
 {
     if (global.medievalrank == "none")

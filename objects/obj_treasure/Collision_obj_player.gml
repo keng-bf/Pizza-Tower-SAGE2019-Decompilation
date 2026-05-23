@@ -28,6 +28,5 @@ with (obj_player)
         obj_tv.message = "YOU GOT A TOWER SECRET TREASURE!!!";
         obj_tv.alarm[0] = 30;
         other.player = 1;
-        ini_close();
     }
 }

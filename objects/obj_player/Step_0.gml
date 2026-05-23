@@ -50,10 +50,6 @@ switch (state)
         scr_player_knightpep();
         break;
     
-    case 24:
-        scr_player_knightpepattack();
-        break;
-    
     case 26:
         scr_player_bombpep();
         break;
@@ -128,10 +124,6 @@ switch (state)
     
     case 53:
         scr_player_bossintro();
-        break;
-    
-    case 52:
-        scr_player_pizzathrow();
         break;
     
     case 54:

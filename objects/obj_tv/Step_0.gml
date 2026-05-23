@@ -94,7 +94,7 @@ else if (global.hurtcounter >= global.hurtmilestone && obj_player.character == "
     message = "YOU HAVE HURT PEPPINO " + string(global.hurtmilestone) + " TIMES...";
     
     if (tvsprite != spr_tvtalking1 && tvsprite != spr_tvtalking2 && tvsprite != spr_tvtalking3 && tvsprite != spr_tvtalking4)
-        tvsprite = choose(spr_tvtalking1, spr_tvtalking2, spr_tvtalking3, spr_tvtalking4);
+        tvsprite = asset_get_index("spr_tvtalking" + string(irandom_range(1, 4)));
     
     global.hurtmilestone += 3;
 }

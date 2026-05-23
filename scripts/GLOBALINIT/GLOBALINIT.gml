@@ -15,28 +15,8 @@ global.smallnumber = font_add_sprite_ext(spr_smallnumber, "1234567890", 1, 0);
 layer_force_draw_depth(1, 0);
 draw_set_colour(c_black);
 __global_object_depths();
-global.saveroom = ds_list_create();
-global.cowboyhat = 0;
-global.key_inv = 0;
-global.shroomfollow = 0;
-global.cheesefollow = 0;
-global.tomatofollow = 0;
-global.sausagefollow = 0;
-global.pineapplefollow = 0;
-global.keyget = 0;
-global.collect = 0;
-global.treasure = 0;
-global.combo = 0;
-global.combotime = 0;
-global.pizzacoin = 0;
-global.toppintotal = 1;
-global.baddieroom = ds_list_create();
-global.panic = 0;
-global.snickchallenge = 0;
-global.secretfound = 0;
-global.shotgunammo = 0;
-global.SAGEshotgunsnicknumber = 0;
-global.SAGEknighttaken = 0;
+function load_data()
+{
 ini_open("saveData.ini");
 if !ini_section_exists("SAGE2019")
 {
@@ -84,9 +64,37 @@ global.dungeonsecret = ini_read_string("Secret", "dungeon", 0);
 global.medievaltreasure = ini_read_string("Treasure", "medieval", 0);
 global.ruintreasure = ini_read_string("Treasure", "ruin", 0);
 global.dungeontreasure = ini_read_string("Treasure", "dungeon", 0);
+global.medievalrank = ini_read_string("Ranks", "medieval", "none");
+global.ruinrank = ini_read_string("Ranks", "ruin", "none");
+global.dungeonrank = ini_read_string("Ranks", "dungeon", "none");
+global.snickchallengerank = ini_read_string("Ranks", "snickchallenge", "none");
 global.option_fullscreen = ini_read_real("Option", "fullscreen", 1);
 global.option_resolution = ini_read_real("Option", "resolution", 1);
 ini_close();
+}
+global.saveroom = ds_list_create();
+global.cowboyhat = 0;
+global.key_inv = 0;
+global.shroomfollow = 0;
+global.cheesefollow = 0;
+global.tomatofollow = 0;
+global.sausagefollow = 0;
+global.pineapplefollow = 0;
+global.keyget = 0;
+global.collect = 0;
+global.treasure = 0;
+global.combo = 0;
+global.combotime = 0;
+global.pizzacoin = 0;
+global.toppintotal = 1;
+global.baddieroom = ds_list_create();
+global.panic = 0;
+global.snickchallenge = 0;
+global.secretfound = 0;
+global.shotgunammo = 0;
+global.SAGEshotgunsnicknumber = 0;
+global.SAGEknighttaken = 0;
+load_data()
 window_set_fullscreen(!global.option_fullscreen);
 var _window = [
 	[480, 270],

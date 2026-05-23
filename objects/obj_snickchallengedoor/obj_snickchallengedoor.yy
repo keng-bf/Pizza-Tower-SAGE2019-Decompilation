@@ -34,8 +34,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_goldendoorunvisited",
-    "path": "sprites/spr_goldendoorunvisited/spr_goldendoorunvisited.yy",
+    "name": "spr_goldendoor",
+    "path": "sprites/spr_goldendoor/spr_goldendoor.yy",
   },
   "spriteMaskId": null,
   "visible": true,

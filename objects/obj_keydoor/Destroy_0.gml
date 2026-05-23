@@ -1,6 +1,6 @@
 with (instance_create(x, y, obj_door))
 {
-    sprite_index = spr_doorvisited;
+    sprite_index = spr_door;
     visited = 1;
     target_x = other.target_x2;
     target_y = other.target_y2;

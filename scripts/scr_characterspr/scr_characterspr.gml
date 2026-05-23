@@ -61,7 +61,6 @@ function scr_characterspr()
 	    spr_suplexmash2 = spr_player_suplexmash2;
 	    spr_suplexmash3 = spr_player_suplexmash3;
 	    spr_suplexmash4 = spr_player_suplexmash4;
-	    spr_tackle = spr_player_tackle;
 	    spr_airdash1 = spr_player_airdash1;
 	    spr_airdash2 = spr_player_airdash2;
 	    spr_keyget = spr_player_keyget;
@@ -177,7 +176,6 @@ function scr_characterspr()
 	    spr_suplexmash2 = spr_snick_idle;
 	    spr_suplexmash3 = spr_snick_idle;
 	    spr_suplexmash4 = spr_snick_idle;
-	    spr_tackle = spr_snick_bump;
 	    spr_airdash1 = spr_snick_bodyslamstart;
 	    spr_airdash2 = spr_snick_fall;
 	    spr_keyget = spr_snick_gotkey;
