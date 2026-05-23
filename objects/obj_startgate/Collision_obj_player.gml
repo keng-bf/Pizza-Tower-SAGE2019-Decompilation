@@ -37,10 +37,8 @@ if (floor(obj_player.image_index) == (obj_player.image_number - 1) && obj_player
         }
         
         obj_music.fadeoff = 0;
-        targetDoor = other.targetDoor;
+        targetDoor = "A";
         targetRoom = other.targetRoom;
-        
-        if (!instance_exists(obj_fadeout))
-            instance_create(x, y, obj_fadeout);
+        instance_create_unique(x, y, obj_fadeout);
     }
 }

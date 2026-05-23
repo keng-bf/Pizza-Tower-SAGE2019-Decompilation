@@ -4,7 +4,4 @@ function pal_swap_init_system()
 	global.Pal_UVs = shader_get_uniform(shd_pal_swapper, "palette_UVs");
 	global.Pal_Index = shader_get_uniform(shd_pal_swapper, "palette_index");
 	global.Pal_Texture = shader_get_sampler_index(shd_pal_swapper, "palette_texture");
-	
-	if (argument_count > 1 && argument[1])
-	    global.Pal_Map = ds_map_create();
 }

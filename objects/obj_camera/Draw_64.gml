@@ -1,4 +1,4 @@
-pal_swap_set(spr_peppalette, obj_player.paletteselect, 0);
+pal_swap_set(spr_peppalette, obj_player.paletteselect);
 
 if obj_player.backupweapon == 1
     draw_sprite_ext(spr_shotgunbackup, -1, 50, 100, 1, 1, 1, c_white, alpha);
@@ -71,10 +71,7 @@ if obj_player.state != 54
     if global.panic || global.snickchallenge
     {
 		draw_set_color((global.minutes < 1) ? c_red : c_white);
-        if global.seconds < 10
-            draw_text(random_range(1, -1) + 480, random_range(1, -1) + 65, string_hash_to_newline(string(global.minutes) + ":0" + string(global.seconds)));
-        else if global.seconds >= 10
-            draw_text(random_range(1, -1) + 480, random_range(1, -1) + 65, string_hash_to_newline(string(global.minutes) + ":" + string(global.seconds)));
+        draw_text(random_range(1, -1) + 480, random_range(1, -1) + 65, string_hash_to_newline(string(global.minutes) + ((global.seconds < 10) ? ":0" : ":") + string(global.seconds)));
     }
     
     if global.key_inv
