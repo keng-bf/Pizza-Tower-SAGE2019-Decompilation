@@ -1,6 +1,8 @@
+scr_getinput()
+
 if (!pause && !instance_exists(obj_fadeout))
 {
-    if (obj_player.key_start && (room != rank_room && room != Realtitlescreen && room != timesuproom))
+    if (key_start && (room != rank_room && room != Realtitlescreen && room != timesuproom))
     {
         selected = 0;
         
@@ -14,7 +16,6 @@ if (instance_exists(obj_pausefadeout) && instance_exists(obj_fadeout))
 
 if (pause == 1)
 {
-    scr_getinput();
     application_surface_draw_enable(true);
     
     if (key_down2 && selected < 2)

@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_sleep",
+  "name": "scr_pizza_function",
   "isCompatibility": true,
   "isDnD": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "PizzaTower_GM2",
+    "path": "PizzaTower_GM2.yyp",
   },
 }

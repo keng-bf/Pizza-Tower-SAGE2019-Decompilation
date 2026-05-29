@@ -1,91 +1,63 @@
+scr_getinput()
+var _move = key_down2 - key_up2
+var _move2 = key_right2 - -key_left2
 if (!instance_exists(obj_keyconfig))
 {
-    if (obj_player.key_up2 && optionselected > 0)
+    if _move != 0
     {
-        optionselected -= 1;
-        scr_soundeffect(sfx_step);
-    }
-    
-    if (obj_player.key_down2 && optionselected < 2)
-    {
-        optionselected += 1;
+        optionselected += _move;
+        optionselected = clamp(optionselected, 0, 2);
         scr_soundeffect(sfx_step);
     }
 }
 
-if (optionselected == 0)
+switch optionselected
 {
-    if (obj_player.key_right2 && optionsaved_fullscreen == 0)
-        optionsaved_fullscreen = 1;
-    
-    if (-obj_player.key_left2 && optionsaved_fullscreen == 1)
-        optionsaved_fullscreen = 0;
-    
-    if (obj_player.key_jump && optionsaved_fullscreen == 0)
+	case 0:
+    if _move2 != 0
     {
-        window_set_fullscreen(true);
-        ini_open("saveData.ini");
-        ini_write_real("Option", "fullscreen", 0);
-        ini_close();
+        optionsaved_fullscreen += _move;
+        optionsaved_fullscreen = clamp(optionsaved_fullscreen, 0, 1);
     }
     
-    if (obj_player.key_jump && optionsaved_fullscreen == 1)
+    if key_jump
     {
-        window_set_fullscreen(false);
+        window_set_fullscreen(!optionsaved_fullscreen);
         ini_open("saveData.ini");
-        ini_write_real("Option", "fullscreen", 1);
+        ini_write_real("Option", "fullscreen", optionsaved_fullscreen);
         ini_close();
     }
-}
-
-if (optionselected == 1)
-{
-    if (obj_player.key_right2 && optionsaved_resolution < 2)
-        optionsaved_resolution += 1;
-    
-    if (-obj_player.key_left2 && optionsaved_resolution > 0)
-        optionsaved_resolution -= 1;
-    
-    if (obj_player.key_jump && optionsaved_resolution == 0)
+	break
+	case 1:
+    if _move2 != 0
     {
-        ini_open("saveData.ini");
-        ini_write_real("Option", "resolution", 0);
-        ini_close();
-        window_set_size(480, 270);
+        optionsaved_resolution += _move;
+        optionsaved_resolution = clamp(optionsaved_resolution, 0, 2);
     }
     
-    if (obj_player.key_jump && optionsaved_resolution == 1)
-    {
-        window_set_size(960, 540);
+    if key_jump
+	{
         ini_open("saveData.ini");
-        ini_write_real("Option", "resolution", 1);
+        ini_write_real("Option", "resolution", optionsaved_resolution);
         ini_close();
-    }
-    
-    if (obj_player.key_jump && optionsaved_resolution == 2)
-    {
-        window_set_size(1980, 1080);
-        ini_open("saveData.ini");
-        ini_write_real("Option", "resolution", 2);
-        ini_close();
-    }
-}
-
-if (optionselected == 2)
-{
+		window_easy_size(optionsaved_resolution)
+	}
+	break
+	case 2:
     if (!instance_exists(obj_keyconfig))
     {
-        if (obj_player.key_jump)
+        if (key_jump)
         {
             visible = false;
             instance_create(x, y, obj_keyconfig);
         }
     }
+	break
 }
 
-if ((obj_player.key_slap2 || obj_player.key_start) && !instance_exists(obj_keyconfig))
+if ((key_slap2 || key_start) && !instance_exists(obj_keyconfig))
 {
     scr_soundeffect(sfx_enemyprojectile);
-    obj_mainmenuselect.selected = 0;
+    with obj_mainmenuselect selected = 0;
     instance_destroy();
 }

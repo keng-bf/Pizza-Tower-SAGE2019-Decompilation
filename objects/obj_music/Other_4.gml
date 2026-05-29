@@ -7,7 +7,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
         if (!audio_is_playing(mu_title))
         {
             audio_stop_all();
-            scr_sound(mu_title);
+            scr_music(mu_title);
             pausedmusic = mu_title;
         }
     }
@@ -17,7 +17,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
         if (!audio_is_playing(mu_hub))
         {
             audio_stop_all();
-            scr_sound(mu_hub);
+            scr_music(mu_hub);
             pausedmusic = mu_hub;
         }
     }
@@ -27,7 +27,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
         if (!audio_is_playing(mu_tutorial))
         {
             audio_stop_all();
-            scr_sound(mu_tutorial);
+            scr_music(mu_tutorial);
             pausedmusic = mu_tutorial;
         }
     }
@@ -41,7 +41,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
                 if (!audio_is_playing(mu_dungeon))
                 {
                     audio_stop_all();
-                    scr_sound(mu_dungeon);
+                    scr_music(mu_dungeon);
                     audio_sound_set_track_position(global.music, fadeoff);
                     pausedmusic = mu_dungeon;
                 }
@@ -51,7 +51,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
                 if (!audio_is_playing(mu_dungeondepth))
                 {
                     audio_stop_all();
-                    scr_sound(mu_dungeondepth);
+                    scr_music(mu_dungeondepth);
                     audio_sound_set_track_position(global.music, fadeoff);
                     pausedmusic = mu_dungeondepth;
                 }
@@ -68,7 +68,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
                 if (!audio_is_playing(mu_medievalentrance))
                 {
                     audio_stop_all();
-                    scr_sound(mu_medievalentrance);
+                    scr_music(mu_medievalentrance);
                     audio_sound_set_track_position(global.music, fadeoff);
                     pausedmusic = mu_medievalentrance;
                 }
@@ -78,7 +78,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
                 if (!audio_is_playing(mu_medievalremix))
                 {
                     audio_stop_all();
-                    scr_sound(mu_medievalremix);
+                    scr_music(mu_medievalremix);
                     audio_sound_set_track_position(global.music, fadeoff);
                     pausedmusic = mu_medievalremix;
                 }
@@ -88,7 +88,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
                 if (!audio_is_playing(mu_medieval))
                 {
                     audio_stop_all();
-                    scr_sound(mu_medieval);
+                    scr_music(mu_medieval);
                     audio_sound_set_track_position(global.music, fadeoff);
                     pausedmusic = mu_medieval;
                 }
@@ -105,7 +105,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
                 if (!audio_is_playing(mu_ruin))
                 {
                     audio_stop_all();
-                    scr_sound(mu_ruin);
+                    scr_music(mu_ruin);
                     audio_sound_set_track_position(global.music, fadeoff);
                     pausedmusic = mu_ruin;
                 }
@@ -115,7 +115,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
                 if (!audio_is_playing(mu_ruinremix))
                 {
                     audio_stop_all();
-                    scr_sound(mu_ruinremix);
+                    scr_music(mu_ruinremix);
                     audio_sound_set_track_position(global.music, fadeoff);
                     pausedmusic = mu_ruinremix;
                 }
@@ -128,7 +128,7 @@ if (global.panic == 0 && global.snickchallenge == 0)
         if (!audio_is_playing(mu_secret))
         {
             audio_stop_all();
-            scr_sound(mu_secret);
+            scr_music(mu_secret);
             audio_sound_set_track_position(global.music, fadeoff);
             pausedmusic = mu_secret;
         }

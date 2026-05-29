@@ -1,4 +1,6 @@
-if ((obj_player.state == 0 || obj_player.state == 68 || obj_player.state == 69 || obj_player.state == 89 || obj_player.state == 64) && sprite_index == spr_doorkey && obj_player.key_up && global.key_inv && place_meeting(x, y, obj_player))
+scr_getinput()
+
+if ((obj_player.state == 0 || obj_player.state == 68 || obj_player.state == 69 || obj_player.state == 89 || obj_player.state == 64) && sprite_index == spr_doorkey && key_up && global.key_inv && place_meeting(x, y, obj_player))
 {
     ds_list_add(global.saveroom, id);
     obj_player.state = 63;
@@ -17,12 +19,10 @@ with (obj_player)
         mach2 = 0;
         image_index = 0;
         obj_camera.chargecamera = 0;
-        obj_player.sprite_index = obj_player.spr_lookdoor;
-        obj_player.targetDoor = other.targetDoor;
-        obj_player.targetRoom = other.targetRoom;
-        obj_player.image_index = 0;
-        obj_player.state = 77;
-        obj_player.mach2 = 0;
+        sprite_index = spr_lookdoor;
+        targetDoor = other.targetDoor;
+        targetRoom = other.targetRoom;
+        image_index = 0;
         state = 77;
         instance_create(x, y, obj_fadeout);
     }
@@ -43,4 +43,4 @@ if (floor(obj_player.image_index) == (obj_player.image_number - 1) && obj_player
     }
 }
 
-auto_targetdoor
+auto_targetdoor()

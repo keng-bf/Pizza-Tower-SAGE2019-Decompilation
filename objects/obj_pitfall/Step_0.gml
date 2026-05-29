@@ -1,1 +1,1 @@
-auto_targetdoor
+auto_targetdoor()

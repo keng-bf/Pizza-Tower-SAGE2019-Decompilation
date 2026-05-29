@@ -1,20 +1,9 @@
 global.bigfont = font_add_sprite_ext(spr_font, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.1234567890:", 1, 0);
 global.smallnumber = font_add_sprite_ext(spr_smallnumber, "1234567890", 1, 0);
-
-#macro auto_targetdoor if (place_meeting(x, y, obj_doorA))\
-							targetDoor = "A"\
-						if (place_meeting(x, y, obj_doorB))\
-							targetDoor = "B"\
-						if (place_meeting(x, y, obj_doorC))\
-							targetDoor = "C"\
-						if (place_meeting(x, y, obj_doorD))\
-							targetDoor = "D"\
-						if (place_meeting(x, y, obj_doorE))\
-							targetDoor = "E"
-
 layer_force_draw_depth(1, 0);
 draw_set_colour(c_black);
 __global_object_depths();
+
 function load_data()
 {
 ini_open("saveData.ini");
@@ -96,9 +85,14 @@ global.SAGEshotgunsnicknumber = 0;
 global.SAGEknighttaken = 0;
 load_data()
 window_set_fullscreen(!global.option_fullscreen);
-var _window = [
-	[480, 270],
-	[960, 540],
-	[1920, 1080],
-]
-window_set_size(_window[global.option_resolution][0], _window[global.option_resolution][1]);
+window_easy_size()
+
+function window_easy_size(_key = global.option_resolution)
+{
+	var _window = [
+		[480, 270],
+		[960, 540],
+		[1920, 1080],
+	]
+	window_set_size(_window[_key][0], _window[_key][1]);
+}
