@@ -39,6 +39,7 @@ if (floor(obj_player.image_index) == (obj_player.image_number - 1) && obj_player
         obj_music.fadeoff = 0;
         targetDoor = "A";
         targetRoom = other.targetRoom;
+		global.leveltorestart = other.targetRoom
         instance_create_unique(x, y, obj_fadeout);
     }
 }

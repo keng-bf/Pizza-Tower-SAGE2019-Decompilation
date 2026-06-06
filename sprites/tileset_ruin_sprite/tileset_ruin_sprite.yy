@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"800974b7-3d59-4163-8bf1-d7244749f968",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4d1eb72b-7f5b-4a20-81d8-161216d73b1e",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 504,
+  "height": 352,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0782b768-09e2-40ad-a477-68603120e6ee","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e9ae41e5-678e-4075-abd8-0e1535fe4a6f","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Tilesets",
-    "path": "folders/Sprites/Tilesets.yy",
+    "name": "ruin",
+    "path": "folders/Tile Sets/ruin.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"800974b7-3d59-4163-8bf1-d7244749f968","path":"sprites/tileset_ruin_sprite/tileset_ruin_sprite.yy",},},},"Disabled":false,"id":"c46ffdd3-9955-43de-9d12-74996c8bd914","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4d1eb72b-7f5b-4a20-81d8-161216d73b1e","path":"sprites/tileset_ruin_sprite/tileset_ruin_sprite.yy",},},},"Disabled":false,"id":"c560a34a-ddf2-4a09-823c-b985a7bf5c12","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 468,
+  "width": 320,
 }

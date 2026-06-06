@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Tilesets",
-    "path": "folders/Sprites/Tilesets.yy",
+    "name": "medieval",
+    "path": "folders/Tile Sets/medieval.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

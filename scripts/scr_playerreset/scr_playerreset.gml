@@ -1,17 +1,46 @@
 function scr_playerreset()
 {
-	if (instance_exists(obj_endlevelfade))
-	    instance_destroy(obj_endlevelfade);
-	
-	global.timeractive = 0;
+	//GLOBAL SHIT
 	global.wave = 0;
 	global.maxwave = 0;
 	global.secretfound = 0;
 	global.hurtcounter = 0;
 	global.snickchallenge = 0;
+	global.SAGEshotgunsnicknumber = 0;
+	global.seconds = 59;
+	global.minutes = 1;
+	global.panic = 0;
+	global.key_inv = 0;
+	global.shroomfollow = 0;
+	global.cheesefollow = 0;
+	global.tomatofollow = 0;
+	global.sausagefollow = 0;
+	global.pineapplefollow = 0;
+	global.keyget = 0;
+	global.collect = 0;
+	global.treasure = 0;
+	global.combo = 0;
+	global.combotime = 0;
+	global.pizzacoin = 0;
+	global.toppintotal = 1;
+	ini_open("saveData.ini");
+	global.SAGEshotgunsnick = ini_read_string("SAGE2019", "shotgunsnick", 0);
+	global.SAGEshotgunsnicknumber = 0;
+	global.SAGEdungeonbackup = ini_read_string("SAGE2019", "dungeonbackup", 0);
+	global.SAGEsrank = ini_read_string("SAGE2019", "srank", 0);
+	global.SAGEsnicksrank = ini_read_string("SAGE2019", "snicksrank", 0);
+	global.SAGEcombo10 = ini_read_string("SAGE2019", "combo10", 0);
+	global.SAGEsecret = ini_read_string("SAGE2019", "secret", 0);
+	global.SAGEknight = ini_read_string("SAGE2019", "knight", 0);
+	global.SAGEknighttaken = 0;
+	global.SAGEtoppin = ini_read_string("SAGE2019", "toppin", 0);
+	global.SAGEtreasure = ini_read_string("SAGE2019", "treasure", 0);
+	ini_close();
 	
-	if (instance_exists(obj_snickexe))
-	    instance_destroy(obj_snickexe);
+	//INSTANCE DESTROY
+	instance_destroy(obj_snickexe);
+	instance_destroy(obj_endlevelfade);
+	instance_destroy(obj_timesup);
 	
 	with (obj_tv)
 	{
@@ -20,17 +49,9 @@ function scr_playerreset()
 	    shownrankc = 0;
 	}
 	
-	global.SAGEshotgunsnicknumber = 0;
 	obj_music.fadeoff = 0;
+	obj_camera.ded = 0;
 	audio_stop_all();
-	
-	if (instance_exists(obj_timesup))
-	    instance_destroy(obj_timesup);
-	
-	global.seconds = 59;
-	global.minutes = 1;
-	obj_player.state = 0;
-	obj_player.visible = true;
 	ds_list_clear(global.saveroom);
 	ds_list_clear(global.baddieroom);
 	
@@ -46,6 +67,7 @@ function scr_playerreset()
 	    alarm[8] = -1;
 	    alarm[9] = -1;
 	    alarm[10] = -1;
+		state = 0
 	    grav = 0.5;
 	    hsp = 0;
 	    vsp = 0;
@@ -59,9 +81,8 @@ function scr_playerreset()
 	    steppy = 0;
 	    movespeedmax = 5;
 	    jumpstop = 0;
-	    obj_camera.ded = 0;
 	    visible = true;
-	    global.panic = 0;
+	    image_alpha = 1;
 	    turn = 0;
 	    jumpAnim = 1;
 	    dashAnim = 1;
@@ -82,33 +103,6 @@ function scr_playerreset()
 	    input_buffer_secondjump = 8;
 	    input_buffer_highjump = 8;
 	    flash = 0;
-	    global.key_inv = 0;
-	    global.shroomfollow = 0;
-	    global.cheesefollow = 0;
-	    global.tomatofollow = 0;
-	    global.sausagefollow = 0;
-	    global.pineapplefollow = 0;
-	    global.keyget = 0;
-	    global.collect = 0;
-	    global.ammo = 0;
-	    global.treasure = 0;
-	    global.combo = 0;
-	    global.combotime = 0;
-	    global.pizzacoin = 0;
-	    global.toppintotal = 1;
-	    ini_open("saveData.ini");
-	    global.SAGEshotgunsnick = ini_read_string("SAGE2019", "shotgunsnick", 0);
-	    global.SAGEshotgunsnicknumber = 0;
-	    global.SAGEdungeonbackup = ini_read_string("SAGE2019", "dungeonbackup", 0);
-	    global.SAGEsrank = ini_read_string("SAGE2019", "srank", 0);
-	    global.SAGEsnicksrank = ini_read_string("SAGE2019", "snicksrank", 0);
-	    global.SAGEcombo10 = ini_read_string("SAGE2019", "combo10", 0);
-	    global.SAGEsecret = ini_read_string("SAGE2019", "secret", 0);
-	    global.SAGEknight = ini_read_string("SAGE2019", "knight", 0);
-	    global.SAGEknighttaken = 0;
-	    global.SAGEtoppin = ini_read_string("SAGE2019", "toppin", 0);
-	    global.SAGEtreasure = ini_read_string("SAGE2019", "treasure", 0);
-	    ini_close();
 	    bounce = 0;
 	    a = 0;
 	    idle = 0;
@@ -132,8 +126,6 @@ function scr_playerreset()
 	    dir = xscale;
 	    fallinganimation = 0;
 	    bombpeptimer = 100;
-	    slapbuffer = 0;
-	    slaphand = 1;
 	    suplexmove = 0;
 	    suplexhavetomash = 0;
 	    anger = 0;

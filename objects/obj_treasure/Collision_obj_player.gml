@@ -1,9 +1,5 @@
 with (obj_player)
 {
-    treasure_x = x;
-    treasure_y = y;
-    treasure_room = room;
-    
     if (grounded)
     {
         ds_list_add(global.saveroom, other.id);

@@ -14,3 +14,14 @@ if (global.medievaltoppin1 == 1 && global.medievaltoppin2 == 1 && global.medieva
 if (global.medievaltreasure == 1 && global.ruintreasure == 1 && global.dungeontreasure == 1 && global.SAGEtreasure == 0)
     ini_write_string("SAGE2019", "treasure", 1);
 ini_close();
+global.collect = 0;
+
+with (obj_tv)
+{
+    shownranka = 0;
+    shownrankb = 0;
+    shownrankc = 0;
+}
+
+ds_list_clear(global.saveroom);
+ds_list_clear(global.baddieroom);

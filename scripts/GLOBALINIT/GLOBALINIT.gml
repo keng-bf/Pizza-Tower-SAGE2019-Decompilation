@@ -1,5 +1,6 @@
 global.bigfont = font_add_sprite_ext(spr_font, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.1234567890:", 1, 0);
 global.smallnumber = font_add_sprite_ext(spr_smallnumber, "1234567890", 1, 0);
+global.leveltorestart = -4
 layer_force_draw_depth(1, 0);
 draw_set_colour(c_black);
 __global_object_depths();

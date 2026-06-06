@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Tilesets",
-    "path": "folders/Sprites/Tilesets.yy",
+    "name": "dungeon",
+    "path": "folders/Tile Sets/dungeon.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

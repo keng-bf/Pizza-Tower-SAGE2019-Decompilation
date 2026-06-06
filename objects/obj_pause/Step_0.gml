@@ -36,26 +36,10 @@ if (pause == 1)
         
         if (global.snickchallenge == 0)
         {
-            if (string_letters(roomname) == "medieval" || string_letters(roomname) == "medievalsecret")
+            if (global.leveltorestart != -4)
             {
                 instance_activate_all();
-                room = medieval_1;
-                scr_playerreset();
-                pause = 0;
-                obj_player.targetDoor = "A";
-            }
-            else if (string_letters(roomname) == "ruin" || string_letters(roomname) == "ruinsecret")
-            {
-                instance_activate_all();
-                room = ruin_1;
-                scr_playerreset();
-                pause = 0;
-                obj_player.targetDoor = "A";
-            }
-            else if (string_letters(roomname) == "dungeon" || string_letters(roomname) == "dungeonsecret")
-            {
-                instance_activate_all();
-                room = dungeon_1;
+                room_goto(global.leveltorestart);
                 scr_playerreset();
                 pause = 0;
                 obj_player.targetDoor = "A";
@@ -68,7 +52,7 @@ if (pause == 1)
         else if (global.snickchallenge)
         {
             instance_activate_all();
-            room = medieval_1;
+            room_goto(global.leveltorestart);
             scr_playerreset();
             global.collect = 10000;
             global.seconds = 59;
@@ -102,6 +86,7 @@ if (pause == 1)
             scr_playerreset();
             obj_player.state = 7;
             global.cowboyhat = 0;
+			global.leveltorestart = -4
             obj_player.targetDoor = "A";
         }
         else
@@ -111,6 +96,7 @@ if (pause == 1)
             scr_playerreset();
             obj_player.targetDoor = "A";
             room = hub_room1;
+			global.leveltorestart = -4
         }
     }
     

@@ -2,8 +2,8 @@ with (obj_player)
 {
     if (room == rank_room)
     {
-        obj_player.x = 480;
-        obj_player.y = 270;
+        x = 480;
+        y = 270;
     }
 }
 
@@ -14,7 +14,7 @@ if (fadealpha > 1)
     fadein = 1;
     
     if (room != rank_room)
-        room = rank_room;
+        room_goto(rank_room);
 }
 
 if (fadein == 0)

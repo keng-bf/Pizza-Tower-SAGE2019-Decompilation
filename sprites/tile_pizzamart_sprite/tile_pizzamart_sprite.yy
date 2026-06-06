@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Tilesets",
-    "path": "folders/Sprites/Tilesets.yy",
+    "name": "pizzamart",
+    "path": "folders/Tile Sets/pizzamart.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

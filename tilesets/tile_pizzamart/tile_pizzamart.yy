@@ -12,8 +12,8 @@
   "out_tilehborder": 0,
   "out_tilevborder": 0,
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "pizzamart",
+    "path": "folders/Tile Sets/pizzamart.yy",
   },
   "spriteId": {
     "name": "tile_pizzamart_sprite",
