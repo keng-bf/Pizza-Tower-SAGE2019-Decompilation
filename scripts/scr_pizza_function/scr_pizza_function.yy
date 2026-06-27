@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scr_pizza_function",
-  "isCompatibility": true,
-  "isDnD": false,
-  "parent": {
-    "name": "PizzaTower_GM2",
-    "path": "PizzaTower_GM2.yyp",
+  "$GMScript":"v1",
+  "%Name":"scr_pizza_function",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"scr_pizza_function",
+  "parent":{
+    "name":"PizzaTower_GM2",
+    "path":"PizzaTower_GM2.yyp",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

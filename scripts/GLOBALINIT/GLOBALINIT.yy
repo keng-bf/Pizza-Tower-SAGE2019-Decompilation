@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "GLOBALINIT",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "PizzaTower_GM2",
-    "path": "PizzaTower_GM2.yyp",
+  "$GMScript":"v1",
+  "%Name":"GLOBALINIT",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GLOBALINIT",
+  "parent":{
+    "name":"PizzaTower_GM2",
+    "path":"PizzaTower_GM2.yyp",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
