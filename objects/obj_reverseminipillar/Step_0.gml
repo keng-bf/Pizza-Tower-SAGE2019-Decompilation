@@ -1,9 +1,10 @@
-if (global.panic == 0)
+if global.panic && !create
 {
-    mask_index = spr_minipillarwoke;
-}
-else
-{
-    mask_index = spr_masknull;
-    sprite_index = spr_minipillarsleep;
+	with (instance_create_depth(x, y, depth, obj_minipillar))
+	{
+		image_xscale = other.image_xscale
+		image_yscale = other.image_yscale
+		create = true
+	}
+	instance_destroy(id)
 }
