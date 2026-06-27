@@ -685,7 +685,6 @@
     {"id":{"name":"spr_minipillarsleep","path":"sprites/spr_minipillarsleep/spr_minipillarsleep.yy",},},
     {"id":{"name":"spr_minipillarwoke","path":"sprites/spr_minipillarwoke/spr_minipillarwoke.yy",},},
     {"id":{"name":"spr_null","path":"sprites/spr_null/spr_null.yy",},},
-    {"id":{"name":"spr_numbers","path":"sprites/spr_numbers/spr_numbers.yy",},},
     {"id":{"name":"spr_pausescreen","path":"sprites/spr_pausescreen/spr_pausescreen.yy",},},
     {"id":{"name":"spr_pepcooter","path":"sprites/spr_pepcooter/spr_pepcooter.yy",},},
     {"id":{"name":"spr_pepgoblin_dead","path":"sprites/spr_pepgoblin_dead/spr_pepgoblin_dead.yy",},},

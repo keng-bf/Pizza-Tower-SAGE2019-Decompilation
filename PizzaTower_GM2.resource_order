@@ -650,7 +650,6 @@
     {"name":"spr_minipillarsleep","order":492,"path":"sprites/spr_minipillarsleep/spr_minipillarsleep.yy",},
     {"name":"spr_minipillarwoke","order":491,"path":"sprites/spr_minipillarwoke/spr_minipillarwoke.yy",},
     {"name":"spr_null","order":552,"path":"sprites/spr_null/spr_null.yy",},
-    {"name":"spr_numbers","order":400,"path":"sprites/spr_numbers/spr_numbers.yy",},
     {"name":"spr_pausescreen","order":423,"path":"sprites/spr_pausescreen/spr_pausescreen.yy",},
     {"name":"spr_pepcooter","order":410,"path":"sprites/spr_pepcooter/spr_pepcooter.yy",},
     {"name":"spr_pepgoblin_dead","order":87,"path":"sprites/spr_pepgoblin_dead/spr_pepgoblin_dead.yy",},
