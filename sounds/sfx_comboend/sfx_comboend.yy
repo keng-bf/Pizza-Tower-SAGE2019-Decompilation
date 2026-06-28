@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.443628,
-  "exportDir":"",
+  "duration":1.4436281,
+  "exportDir":"Sfx",
   "name":"sfx_comboend",
   "parent":{
     "name":"Sfx",

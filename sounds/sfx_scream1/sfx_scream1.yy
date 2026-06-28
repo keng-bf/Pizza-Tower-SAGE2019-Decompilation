@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.985306,
-  "exportDir":"",
+  "duration":1.9853061,
+  "exportDir":"Sfx",
   "name":"sfx_scream1",
   "parent":{
     "name":"Sfx",

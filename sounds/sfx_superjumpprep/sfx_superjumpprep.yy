@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.457166,
-  "exportDir":"",
+  "duration":0.45716554,
+  "exportDir":"Sfx",
   "name":"sfx_superjumpprep",
   "parent":{
     "name":"Sfx",

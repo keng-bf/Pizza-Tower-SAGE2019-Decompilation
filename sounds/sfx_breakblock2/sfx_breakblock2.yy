@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.703855,
-  "exportDir":"",
+  "duration":0.70385486,
+  "exportDir":"Sfx",
   "name":"sfx_breakblock2",
   "parent":{
     "name":"Sfx",

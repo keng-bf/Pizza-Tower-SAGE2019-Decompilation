@@ -11,7 +11,7 @@
   "compressionQuality":4,
   "conversionMode":0,
   "duration":3.096644,
-  "exportDir":"",
+  "exportDir":"Sfx",
   "name":"sfx_bombpep1",
   "parent":{
     "name":"Sfx",

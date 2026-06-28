@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.911383,
-  "exportDir":"",
+  "duration":0.9113832,
+  "exportDir":"Sfx",
   "name":"sfx_loseknight",
   "parent":{
     "name":"Sfx",

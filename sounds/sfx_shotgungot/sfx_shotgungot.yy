@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.88517,
-  "exportDir":"",
+  "duration":1.8851701,
+  "exportDir":"Sfx",
   "name":"sfx_shotgungot",
   "parent":{
     "name":"Sfx",

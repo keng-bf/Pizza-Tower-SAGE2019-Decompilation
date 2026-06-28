@@ -11,7 +11,7 @@
   "compressionQuality":4,
   "conversionMode":0,
   "duration":169.16463,
-  "exportDir":"",
+  "exportDir":"Music",
   "name":"mu_medieval",
   "parent":{
     "name":"Music",

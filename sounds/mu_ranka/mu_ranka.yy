@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":15.575601,
-  "exportDir":"",
+  "duration":134.4,
+  "exportDir":"Music",
   "name":"mu_ranka",
   "parent":{
     "name":"Music",

@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.383333,
-  "exportDir":"",
+  "duration":0.38333333,
+  "exportDir":"Sfx",
   "name":"sfx_machpunch",
   "parent":{
     "name":"Sfx",

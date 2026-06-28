@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.032789,
-  "exportDir":"",
+  "duration":1.0327891,
+  "exportDir":"Sfx",
   "name":"sfx_groundpound",
   "parent":{
     "name":"Sfx",

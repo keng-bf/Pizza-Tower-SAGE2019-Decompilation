@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.381202,
-  "exportDir":"",
+  "duration":1.3812019,
+  "exportDir":"Sfx",
   "name":"sfx_superjumphold",
   "parent":{
     "name":"Sfx",

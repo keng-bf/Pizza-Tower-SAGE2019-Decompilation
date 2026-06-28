@@ -11,7 +11,7 @@
   "compressionQuality":4,
   "conversionMode":0,
   "duration":21.564377,
-  "exportDir":"",
+  "exportDir":"Sfx",
   "name":"sfx_escaperumble",
   "parent":{
     "name":"Sfx",

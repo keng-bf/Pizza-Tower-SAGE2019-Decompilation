@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.201633,
-  "exportDir":"",
+  "duration":1.2016326,
+  "exportDir":"Sfx",
   "name":"sfx_box",
   "parent":{
     "name":"Sfx",

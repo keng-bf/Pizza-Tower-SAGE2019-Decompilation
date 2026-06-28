@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":3.877732,
-  "exportDir":"",
+  "duration":3.8777325,
+  "exportDir":"Sfx",
   "name":"sfx_collectpizza",
   "parent":{
     "name":"Sfx",

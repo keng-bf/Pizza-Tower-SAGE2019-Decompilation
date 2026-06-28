@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.985397,
-  "exportDir":"",
+  "duration":0.9853968,
+  "exportDir":"Sfx",
   "name":"sfx_pephurt",
   "parent":{
     "name":"Sfx",

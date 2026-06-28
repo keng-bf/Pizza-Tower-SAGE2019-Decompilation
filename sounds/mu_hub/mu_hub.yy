@@ -11,7 +11,7 @@
   "compressionQuality":4,
   "conversionMode":0,
   "duration":157.93633,
-  "exportDir":"",
+  "exportDir":"Music",
   "name":"mu_hub",
   "parent":{
     "name":"Music",

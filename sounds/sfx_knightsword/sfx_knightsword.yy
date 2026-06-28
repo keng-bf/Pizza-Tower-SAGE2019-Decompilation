@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":3.428571,
-  "exportDir":"",
+  "duration":3.4285715,
+  "exportDir":"Sfx",
   "name":"sfx_knightsword",
   "parent":{
     "name":"Sfx",

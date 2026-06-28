@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.819955,
-  "exportDir":"",
+  "duration":0.81995463,
+  "exportDir":"Sfx",
   "name":"sfx_buyweapon",
   "parent":{
     "name":"Sfx",

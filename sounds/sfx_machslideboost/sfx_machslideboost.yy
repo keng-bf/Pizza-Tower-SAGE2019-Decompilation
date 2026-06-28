@@ -11,7 +11,7 @@
   "compressionQuality":4,
   "conversionMode":0,
   "duration":1.409161,
-  "exportDir":"",
+  "exportDir":"Sfx",
   "name":"sfx_machslideboost",
   "parent":{
     "name":"Sfx",

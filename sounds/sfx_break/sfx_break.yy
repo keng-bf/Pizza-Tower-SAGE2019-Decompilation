@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.306122,
-  "exportDir":"",
+  "duration":1.3061224,
+  "exportDir":"Sfx",
   "name":"sfx_break",
   "parent":{
     "name":"Sfx",

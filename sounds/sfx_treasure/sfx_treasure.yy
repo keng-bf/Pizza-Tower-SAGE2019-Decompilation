@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.714286,
-  "exportDir":"",
+  "duration":1.7142857,
+  "exportDir":"Sfx",
   "name":"sfx_treasure",
   "parent":{
     "name":"Sfx",

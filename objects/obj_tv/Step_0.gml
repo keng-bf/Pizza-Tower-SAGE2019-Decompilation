@@ -115,7 +115,7 @@ else if (obj_player.state == 59)
     tvsprite = spr_tvbanana;
     once = 1;
 }
-else if (global.combo != 0 && global.combotime != 0 && (tvsprite == spr_tvdefault || tvsprite == spr_tvcombo || tvsprite == spr_tvescape))
+else if (global.combo != 0 && global.combotime != 0 && (tvsprite == spr_tvdefault || tvsprite == spr_tvcombo))
 {
     tvsprite = spr_tvcombo;
     image_speed = 0;

@@ -11,7 +11,7 @@
   "compressionQuality":4,
   "conversionMode":0,
   "duration":212.08961,
-  "exportDir":"",
+  "exportDir":"Music",
   "name":"mu_dungeon",
   "parent":{
     "name":"Music",

@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.0,
-  "exportDir":"",
+  "duration":51.48,
+  "exportDir":"Music",
   "name":"mu_dungeondepth",
   "parent":{
     "name":"Music",

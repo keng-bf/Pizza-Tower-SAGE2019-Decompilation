@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.458503,
-  "exportDir":"",
+  "duration":1.4585034,
+  "exportDir":"Sfx",
   "name":"sfx_shotgunblast",
   "parent":{
     "name":"Sfx",

@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.155215,
-  "exportDir":"",
+  "duration":1.1552154,
+  "exportDir":"Sfx",
   "name":"sfx_explosion",
   "parent":{
     "name":"Sfx",

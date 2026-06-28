@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.632653,
-  "exportDir":"",
+  "duration":1.6326531,
+  "exportDir":"Sfx",
   "name":"sfx_knightslide",
   "parent":{
     "name":"Sfx",

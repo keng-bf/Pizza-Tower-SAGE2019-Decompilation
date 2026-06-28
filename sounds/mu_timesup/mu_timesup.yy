@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":4.871837,
-  "exportDir":"",
+  "duration":4.8718367,
+  "exportDir":"Music",
   "name":"mu_timesup",
   "parent":{
     "name":"Music",

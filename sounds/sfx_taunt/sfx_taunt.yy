@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.700952,
-  "exportDir":"",
+  "duration":0.7009524,
+  "exportDir":"Sfx",
   "name":"sfx_taunt",
   "parent":{
     "name":"Sfx",

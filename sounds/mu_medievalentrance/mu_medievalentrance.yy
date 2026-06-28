@@ -11,7 +11,7 @@
   "compressionQuality":4,
   "conversionMode":0,
   "duration":130.02487,
-  "exportDir":"",
+  "exportDir":"Music",
   "name":"mu_medievalentrance",
   "parent":{
     "name":"Music",

@@ -11,7 +11,7 @@
   "compressionQuality":4,
   "conversionMode":0,
   "duration":71.5073,
-  "exportDir":"",
+  "exportDir":"Music",
   "name":"mu_secret",
   "parent":{
     "name":"Music",

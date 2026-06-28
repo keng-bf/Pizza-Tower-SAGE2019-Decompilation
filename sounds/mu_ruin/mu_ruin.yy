@@ -11,7 +11,7 @@
   "compressionQuality":4,
   "conversionMode":0,
   "duration":107.66402,
-  "exportDir":"",
+  "exportDir":"Music",
   "name":"mu_ruin",
   "parent":{
     "name":"Music",

@@ -11,7 +11,7 @@
   "compressionQuality":4,
   "conversionMode":0,
   "duration":1.614263,
-  "exportDir":"",
+  "exportDir":"Sfx",
   "name":"sfx_superjumprelease",
   "parent":{
     "name":"Sfx",

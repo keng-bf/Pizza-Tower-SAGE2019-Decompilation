@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.967982,
-  "exportDir":"",
+  "duration":0.9679819,
+  "exportDir":"Sfx",
   "name":"sfx_tumble4",
   "parent":{
     "name":"Sfx",

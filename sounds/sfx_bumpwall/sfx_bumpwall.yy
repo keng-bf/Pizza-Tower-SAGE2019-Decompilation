@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.199909,
-  "exportDir":"",
+  "duration":0.1999093,
+  "exportDir":"Sfx",
   "name":"sfx_bumpwall",
   "parent":{
     "name":"Sfx",

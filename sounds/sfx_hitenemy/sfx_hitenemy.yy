@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.274444,
-  "exportDir":"",
+  "duration":0.27444443,
+  "exportDir":"Sfx",
   "name":"sfx_hitenemy",
   "parent":{
     "name":"Sfx",

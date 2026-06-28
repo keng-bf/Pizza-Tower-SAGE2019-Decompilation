@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"bg_ruinsky",
   "bboxMode":0,
-  "bbox_bottom":49,
+  "bbox_bottom":1,
   "bbox_left":0,
-  "bbox_right":49,
+  "bbox_right":1,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":50,
+  "height":2,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"5b6f7462-4ada-4d31-9e38-e6ef9a001c2c","blendMode":0,"displayName":"default","isLocked":false,"name":"5b6f7462-4ada-4d31-9e38-e6ef9a001c2c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":50,
+  "width":2,
 }

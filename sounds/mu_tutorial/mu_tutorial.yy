@@ -11,7 +11,7 @@
   "compressionQuality":4,
   "conversionMode":0,
   "duration":380.6041,
-  "exportDir":"",
+  "exportDir":"Music",
   "name":"mu_tutorial",
   "parent":{
     "name":"Music",

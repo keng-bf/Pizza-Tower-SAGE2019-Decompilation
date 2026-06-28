@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":3.645918,
-  "exportDir":"",
+  "duration":3.6459184,
+  "exportDir":"Sfx",
   "name":"sfx_collecttoppin",
   "parent":{
     "name":"Sfx",

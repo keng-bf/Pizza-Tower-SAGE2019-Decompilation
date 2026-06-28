@@ -11,7 +11,7 @@
   "compressionQuality":4,
   "conversionMode":0,
   "duration":245.91818,
-  "exportDir":"",
+  "exportDir":"Music",
   "name":"mu_ruinremix",
   "parent":{
     "name":"Music",

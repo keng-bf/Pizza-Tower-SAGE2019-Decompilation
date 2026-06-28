@@ -11,7 +11,7 @@
   "compressionQuality":4,
   "conversionMode":0,
   "duration":231.63292,
-  "exportDir":"",
+  "exportDir":"Music",
   "name":"mu_pizzatime",
   "parent":{
     "name":"Music",

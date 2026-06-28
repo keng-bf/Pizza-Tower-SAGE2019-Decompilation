@@ -11,7 +11,7 @@
   "compressionQuality":4,
   "conversionMode":0,
   "duration":1.548322,
-  "exportDir":"",
+  "exportDir":"Sfx",
   "name":"sfx_pizzacoin",
   "parent":{
     "name":"Sfx",

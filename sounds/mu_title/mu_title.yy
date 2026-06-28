@@ -11,7 +11,7 @@
   "compressionQuality":4,
   "conversionMode":0,
   "duration":134.4,
-  "exportDir":"",
+  "exportDir":"Music",
   "name":"mu_title",
   "parent":{
     "name":"Music",

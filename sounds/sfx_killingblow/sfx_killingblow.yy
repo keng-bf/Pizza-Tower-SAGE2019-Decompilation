@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.532336,
-  "exportDir":"",
+  "duration":0.5323356,
+  "exportDir":"Sfx",
   "name":"sfx_killingblow",
   "parent":{
     "name":"Sfx",

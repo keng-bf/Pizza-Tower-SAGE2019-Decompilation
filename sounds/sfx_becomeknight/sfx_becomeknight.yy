@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":3.645556,
-  "exportDir":"",
+  "duration":3.6455555,
+  "exportDir":"Sfx",
   "name":"sfx_becomeknight",
   "parent":{
     "name":"Sfx",

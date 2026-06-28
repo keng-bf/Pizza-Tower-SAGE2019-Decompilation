@@ -11,7 +11,7 @@
   "compressionQuality":4,
   "conversionMode":0,
   "duration":176.0029,
-  "exportDir":"",
+  "exportDir":"Music",
   "name":"mu_medievalremix",
   "parent":{
     "name":"Music",

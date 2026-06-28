@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":3.161973,
-  "exportDir":"",
+  "duration":3.1619728,
+  "exportDir":"Sfx",
   "name":"sfx_machroll",
   "parent":{
     "name":"Sfx",

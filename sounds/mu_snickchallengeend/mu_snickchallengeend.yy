@@ -11,7 +11,7 @@
   "compressionQuality":4,
   "conversionMode":0,
   "duration":139.24861,
-  "exportDir":"",
+  "exportDir":"Music",
   "name":"mu_snickchallengeend",
   "parent":{
     "name":"Music",

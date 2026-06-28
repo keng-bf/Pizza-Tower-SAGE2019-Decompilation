@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":2.209819,
-  "exportDir":"",
+  "duration":2.2098186,
+  "exportDir":"Sfx",
   "name":"sfx_fireassend",
   "parent":{
     "name":"Sfx",

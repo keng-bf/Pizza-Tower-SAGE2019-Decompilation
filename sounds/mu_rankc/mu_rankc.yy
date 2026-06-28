@@ -11,7 +11,7 @@
   "compressionQuality":4,
   "conversionMode":0,
   "duration":15.637188,
-  "exportDir":"",
+  "exportDir":"Music",
   "name":"mu_rankc",
   "parent":{
     "name":"Music",

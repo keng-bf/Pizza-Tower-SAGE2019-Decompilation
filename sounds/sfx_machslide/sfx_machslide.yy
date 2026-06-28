@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.605918,
-  "exportDir":"",
+  "duration":1.6059184,
+  "exportDir":"Sfx",
   "name":"sfx_machslide",
   "parent":{
     "name":"Sfx",

@@ -10,8 +10,8 @@
   "compression":3,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.354036,
-  "exportDir":"",
+  "duration":1.3540363,
+  "exportDir":"Sfx",
   "name":"sfx_killenemy",
   "parent":{
     "name":"Sfx",

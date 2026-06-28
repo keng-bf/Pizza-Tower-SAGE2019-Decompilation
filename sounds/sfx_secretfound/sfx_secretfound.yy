@@ -11,7 +11,7 @@
   "compressionQuality":4,
   "conversionMode":0,
   "duration":6.36517,
-  "exportDir":"",
+  "exportDir":"Sfx",
   "name":"sfx_secretfound",
   "parent":{
     "name":"Sfx",
