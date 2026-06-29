@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ffedf81a-6d03-4397-a0e9-733a790d9855",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"002096be-2d1a-4d7d-8272-d3f5f63cb589",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 504,
+  "height": 352,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e65a55fd-2884-49e5-9486-9dcb52a22635","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"db32e07c-5240-4c4c-840f-bf8ec0e3381d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ffedf81a-6d03-4397-a0e9-733a790d9855","path":"sprites/tileset_dungeon2_sprite/tileset_dungeon2_sprite.yy",},},},"Disabled":false,"id":"53667d7f-06bd-4a6d-a476-a13ba6720db3","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"002096be-2d1a-4d7d-8272-d3f5f63cb589","path":"sprites/tileset_dungeon2_sprite/tileset_dungeon2_sprite.yy",},},},"Disabled":false,"id":"e1f03bfd-406a-48a7-9bbb-26f44974ce27","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 468,
+  "width": 320,
 }

@@ -1,5 +1,7 @@
 if pause
 {
-	draw_sprite_ext(sprite1122, 0, 0, 0, 50, 50, 0, c_white, 1)
+	draw_set_color(c_black)
+	draw_set_alpha(1)
+	draw_rectangle(0, 0, 960, 540, false)
     draw_sprite(spr_pausescreen, selected, 0, 0);
 }

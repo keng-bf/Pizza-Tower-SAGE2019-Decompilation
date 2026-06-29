@@ -1,6 +1,7 @@
 draw_set_font(global.bigfont);
 draw_set_halign(fa_center);
 draw_set_color(c_white);
+draw_sprite_ext(spr_tvdefault, -1, 832, 74, 1, 1, 1, c_white, alpha);
 draw_sprite_ext(tvsprite, -1, 832, 74, 1, 1, 1, c_white, alpha);
 draw_text(xi, yi, string_hash_to_newline(message));
 

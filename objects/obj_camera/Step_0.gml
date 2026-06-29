@@ -1,7 +1,5 @@
-if (room == rank_room || room == timesuproom || room == Realtitlescreen)
-    visible = false;
-else
-    visible = true;
+var _visible = (room == rank_room || room == timesuproom || room == Realtitlescreen)
+visible = !_visible;
 	
 if (global.panic && start == 0)
 {

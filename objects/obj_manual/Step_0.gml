@@ -10,5 +10,5 @@ if _move != 0
 if (key_slap2 || keyboard_check_pressed(vk_f5) || key_start)
 {
     instance_destroy();
-    obj_mainmenuselect.selected = 0;
+    with obj_mainmenuselect selected = 0
 }
